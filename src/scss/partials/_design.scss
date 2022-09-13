@@ -1,0 +1,244 @@
+.design {
+  &__tool {
+    display: flex;
+
+    .nav-tabs {
+      flex-direction: column;
+      border-radius: 5px;
+      background-color: #ffffff;
+
+      .nav-item {
+        .nav-link {
+          background-color: transparent;
+          border-radius: 0;
+          border: none;
+          padding: 20px;
+          border-bottom: 1px solid $color-border;
+
+          &.active {
+            svg {
+              path {
+                stroke: $primary;
+
+                &:nth-child(2) {
+                  fill: $primary;
+                }
+              }
+            }
+          }
+        }
+
+        &.action-tool {
+          .nav-link {
+            margin-right: 0;
+            border-bottom: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            &:nth-last-child(1) {
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 20px 20px;
+      background-color: $light-secondary;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      min-width: 290px;
+      height: calc(100vh - 350px);
+      position: relative;
+
+      .action-save-design {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $light-secondary;
+        padding: 20px;
+      }
+    }
+
+    &--title {
+      color: $black;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    &--content {
+      margin-top: 20px;
+
+      .type {
+        &__content {
+          margin-bottom: 32px;
+          text-align: center;
+          display: block;
+
+          img {
+            margin-bottom: 5px;
+
+          }
+
+          &--name {
+            font-size: 12px;
+            color: #656782;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__view {}
+}
+
+.color-choices {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 35px;
+  position: relative;
+  height: 35px;
+
+  input[type=radio] {
+    visibility: hidden;
+  }
+
+  form {
+    margin: 0 30px;
+  }
+
+  label.radio {
+    cursor: pointer;
+    text-indent: 35px;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+  }
+
+  label.radio:before {
+    background: #B8BCBE;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+  }
+
+  label.radio:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    background: transparent;
+    top: 12.5px;
+    left: 9.5px;
+    border: 3px solid $black;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  input[type=radio]:checked+label:after {
+    opacity: 1;
+  }
+
+  label {
+    &.radio {
+      &.cl-1:before {
+        background: #fff;
+      }
+
+      &.cl-1:after {
+        border-color: $black;
+      }
+
+      &.cl-3:before {
+        background: #0D0D0D;
+      }
+
+      &.cl-3:after {
+        border-color: #ffffff;
+      }
+
+      &.cl-4:before {
+        background: #02B5D6;
+      }
+
+      &.cl-4:after {
+        border-color: #fff;
+      }
+
+      &.cl-5:before {
+        background: #9D0021;
+      }
+
+      &.cl-5:after {
+        border-color: #fff;
+      }
+
+      &.cl-6:before {
+        background: #4A2E5C;
+      }
+
+      &.cl-6:after {
+        border-color: #fff;
+      }
+
+      &.cl-7:before {
+        background: #FCB7C9;
+      }
+
+      &.cl-7:after {
+        border-color: $black;
+      }
+      &.cl-8:before {
+        background: #D05419;
+      }
+
+      &.cl-8:after {
+        border-color: #fff;
+      }
+      &.cl-9:before {
+        background: #61704B;
+      }
+
+      &.cl-9:after {
+        border-color: #Fff;
+      }
+      &.cl-10:before {
+        background: #0A1236;
+      }
+
+      &.cl-10:after {
+        border-color: #fff;
+      }
+      &.cl-11:before {
+        background: #30641F;
+      }
+
+      &.cl-11:after {
+        border-color: #fff;
+      }
+      &.cl-12:before {
+        background: #FEA81C;
+      }
+
+      &.cl-12:after {
+        border-color: #Fff;
+      }
+    }
+  }
+}

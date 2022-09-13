@@ -1,0 +1,36 @@
+.header {
+  .navbar {
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      // padding: 1.75rem 1.25rem;
+      // padding-right: 1.25rem;
+      // padding-left: 1.25rem;s
+      padding: 28px 20px;
+      color: $black;
+      &.active{
+        color: $primary;
+        border-bottom: 3px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(85.51deg, #FF2E57 -21.11%, #FF7439 137.36%);
+      }
+    }
+
+    .nav-item {
+      &.cart {
+        .nav-link {
+          padding-right: 12px;
+        }
+      }
+
+      &.user {
+        .nav-link {
+          padding-left: 12px;
+        }
+      }
+    }
+  }
+}

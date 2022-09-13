@@ -10,7 +10,11 @@
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
+@import 'partials/_header.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/_design.scss';
 @import 'partials/_footer.scss';
+
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
