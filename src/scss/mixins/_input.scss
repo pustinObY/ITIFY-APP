@@ -30,8 +30,7 @@
   background-color: #f8f9ff;
 }
 
-.select2-container--default
-  .select2-results__option--highlighted.select2-results__option--selectable {
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: #e0e5f8;
   transition: 0.3s;
   color: $black;
@@ -48,6 +47,26 @@
 
 .select2-container--open .select2-dropdown--below {
   margin-top: -4px;
+}
+
+.select2-container {
+  background: #f2f5ff;
+  border: 1px solid #c6d0f2;
+  border-radius: 5px;
+  font-size: 14px;
+  // width: 100% !important;
+
+  .select2-selection--single {
+    height: 35px;
+
+    .select2-selection__rendered {
+      line-height: 32px;
+    }
+
+    .select2-selection__arrow {
+      height: 30px;
+    }
+  }
 }
 
 //slider
@@ -138,29 +157,36 @@
   top: 8px;
   width: 0;
 }
+
 /** FF*/
 input[type="range"]::-moz-range-progress {
   background-color: #43e5f7;
 }
+
 input[type="range"]::-moz-range-track {
   background-color: #9a905d;
 }
+
 /* IE*/
 input[type="range"]::-ms-fill-lower {
   background-color: #43e5f7;
 }
+
 input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
+
 /*====== search form========*/
 .search-form {
   position: relative;
-  svg{
+
+  svg {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     right: 12px;
   }
+
   .form-control {
     background: #f2f5ff;
     border: 1px solid #c6d0f2;
@@ -169,16 +195,21 @@ input[type="range"]::-ms-fill-upper {
     font-size: 14px;
     padding: 7px 12px;
   }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:#989AB9;
-    opacity: 1; /* Firefox */
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #989AB9;
+    opacity: 1;
+    /* Firefox */
   }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:#989AB9;
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #989AB9;
   }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color:#989AB9;
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #989AB9;
   }
 }
