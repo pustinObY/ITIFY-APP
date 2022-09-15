@@ -31,25 +31,30 @@
                 fill: $primary;
               }
             }
+
             svg.image-icon {
               path {
                 fill: $primary;
               }
             }
+
             svg.text-icon {
-              rect{
+              rect {
                 fill: $primary;
               }
+
               path {
                 fill: $primary;
                 stroke: none;
               }
             }
+
             svg.sticker-icon {
               path {
                 fill: $primary;
               }
-              circle{
+
+              circle {
                 fill: $primary;
               }
             }
@@ -267,13 +272,17 @@
   }
 
   &__view {
-    justify-content: space-between;
+    position: relative;
 
     &--modal {
       margin-left: 50px;
       margin-top: 50px;
       display: flex;
       flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
 
       .view-modal {
         &__action {
@@ -317,130 +326,131 @@
       }
     }
 
-    &--setting {
-      display: flex;
-      flex-direction: column;
+    .select-view {
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-grow: 1;
+      text-align: right;
 
-      .select-view {
-        flex-grow: 1;
-        text-align: right;
+      .select2-container {
+        width: 80px !important;
 
-        .select2-container {
-          width: 80px !important;
+        .select2-selection--single {
+          height: 30px;
+        }
+      }
+    }
 
-          .select2-selection--single {
-            height: 30px;
-          }
+    .order-print {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 230px;
+
+      &__head {
+        padding: 13px 16px;
+        border-radius: 5px;
+        background-color: $primary;
+
+        .title {
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+          margin-bottom: 0;
         }
       }
 
-      .order-print {
-        max-width: 230px;
+      &__title {
+        font-size: 14px;
+        color: #656782;
+        margin-bottom: 0;
+      }
 
-        &__head {
-          padding: 13px 16px;
-          border-radius: 5px;
-          background-color: $primary;
+      &__content {
+        background-color: #Fff;
+        padding: 20px 16px;
 
-          .title {
-            font-size: 16px;
-            line-height: 19px;
-            color: #FFFFFF;
-            margin-bottom: 0;
-          }
-        }
+        .size {
+          margin-bottom: 16px;
 
-        &__title {
-          font-size: 14px;
-          color: #656782;
-          margin-bottom: 0;
-        }
+          &__option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        &__content {
-          background-color: #Fff;
-          padding: 20px 16px;
-
-          .size {
-            margin-bottom: 16px;
-
-            &__option {
+            &--item {
+              padding: 0;
+              margin-right: 6px;
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              justify-content: center;
+              width: 32px;
+              height: 32px;
+              background: #FFFFFF;
+              border: 0.714286px solid #D7DEF5;
+              border-radius: 8px;
+              color: #656782;
+              font-size: 10px;
+              line-height: 12px;
 
-              &--item {
-                padding: 0;
-                margin-right: 6px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 32px;
-                height: 32px;
-                background: #FFFFFF;
-                border: 0.714286px solid #D7DEF5;
-                border-radius: 8px;
-                color: #656782;
-                font-size: 10px;
-                line-height: 12px;
+              &:hover,
+              &.active {
+                color: #Fff;
+                transition: .2s ease-in-out;
+                background: linear-gradient(136.76deg, #FF2E57 -30.74%, #FF7439 178.75%);
+              }
 
-                &:hover,
-                &.active {
-                  color: #Fff;
-                  transition: .2s ease-in-out;
-                  background: linear-gradient(136.76deg, #FF2E57 -30.74%, #FF7439 178.75%);
-                }
-
-                &:nth-last-child(1) {
-                  margin-right: 0;
-                }
+              &:nth-last-child(1) {
+                margin-right: 0;
               }
             }
           }
+        }
 
-          .quality {
-            &__control {
+        .quality {
+          &__control {
+            display: flex;
+            border-radius: 5px;
+            border: 1px solid #D7DEF5;
+
+            .btn {
+              width: 32px;
               display: flex;
-              border-radius: 5px;
-              border: 1px solid #D7DEF5;
-
-              .btn {
-                width: 32px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #Fff;
-              }
-
-              .btn,
-              input {
-                height: 32px;
-              }
-
-              input {
-                font-size: 16px;
-                color: $black;
-                font-weight: 500;
-                text-align: center;
-                width: 40px;
-                background: #DCE2F7;
-                border: 1px solid #D7DEF5;
-              }
+              align-items: center;
+              justify-content: center;
+              background-color: #Fff;
             }
-          }
 
-          .price {
-            &__value {
-              color: $black;
-              font-weight: 700;
+            .btn,
+            input {
+              height: 32px;
+            }
+
+            input {
               font-size: 16px;
-              line-height: 20px;
+              color: $black;
+              font-weight: 500;
+              text-align: center;
+              width: 40px;
+              background: #DCE2F7;
+              border: 1px solid #D7DEF5;
             }
           }
+        }
 
-          .price-line-total {
-            opacity: 1;
-            border-top: 1px solid #C6CDE7;
+        .price {
+          &__value {
+            color: $black;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
           }
+        }
+
+        .price-line-total {
+          opacity: 1;
+          border-top: 1px solid #C6CDE7;
         }
       }
     }
