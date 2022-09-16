@@ -370,7 +370,6 @@
       &__content {
         background-color: #Fff;
         padding: 20px 16px;
-
         .size {
           margin-bottom: 16px;
 
@@ -409,6 +408,8 @@
         }
 
         .quality {
+          align-items: center;
+          justify-content: space-between;
           &__control {
             display: flex;
             border-radius: 5px;

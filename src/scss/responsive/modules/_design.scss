@@ -17,12 +17,131 @@
     }
 
     &__view {
+      flex-direction: column;
+
       &--modal {
-        margin-left: 24px;
-        margin-top: 24px;
+        margin-left: 0;
+        margin-top: 32px;
+        flex-grow: 1;
 
         .view-modal__action {
           margin-top: 18px;
+        }
+      }
+
+      .order-print {
+        position: relative;
+        max-width: inherit;
+
+        &__head {
+          &.colappse-effect {
+            align-items: center;
+            justify-content: space-between;
+
+            &[aria-expanded="true"] {
+              svg {
+                transition: .1s;
+                transform: rotate(180deg);
+              }
+            }
+
+            svg {}
+          }
+        }
+
+        &__content {
+          &.collapse {
+            position: absolute;
+            width: 100%;
+            margin-bottom: 50px;
+          }
+
+          &.collapsing {
+            position: absolute;
+            width: 100%;
+          }
+
+          .size {
+            &__option {
+              flex-wrap: wrap;
+              justify-content: flex-start;
+
+              &--item {
+                margin-bottom: 6px;
+              }
+            }
+          }
+
+          .quality {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .order-print__title {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767.77px) {
+  .design {
+    &__tool {
+      position: absolute;
+      left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      bottom: 0;
+
+      .nav-tabs {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .nav-item {
+          .nav-link {
+            border: none;
+          }
+        }
+      }
+
+      .tab-content {
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        background-color: #Fff;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        .tab-pane{
+          &__content{
+
+          }
+        }
+      }
+      &--content{
+        .type{
+          &__content{
+            margin-bottom: 16px;
+            img{
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .design {
+    &__view {
+      .order-print {
+        &__content.collapse:not(.show) {
+          display: block;
         }
       }
     }
