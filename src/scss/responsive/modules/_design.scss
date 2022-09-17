@@ -94,6 +94,7 @@
       padding-left: 0;
       padding-right: 0;
       bottom: 0;
+      width: 100%;
 
       .nav-tabs {
         flex-direction: row;
@@ -108,18 +109,23 @@
       }
 
       .tab-content {
-        height: auto;
         position: fixed;
         bottom: 0;
+        height: auto;
+        width: 100%;
         background-color: #Fff;
         border-radius: 0;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         .tab-pane{
           &__content{
-
+            min-height: 236px;
           }
         }
+      }
+      .content-sub{
+        height: auto;
+        bottom: 0;
       }
       &--content{
         .type{
