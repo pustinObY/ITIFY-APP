@@ -74,6 +74,34 @@
           }
         }
       }
+      .action-tool {
+        .dropdown {
+          position: inherit;
+          .dropdown-item {
+            color: $black;
+            padding: 12px 16px;
+            text-align: center;
+            border-bottom: 1px solid #ecf0ff;
+          }
+          .dropdown-menu {
+            position: absolute!important;
+            margin: 0px!important;
+            transform: none!important;
+            width: 100%!important;
+            left: 0!important;
+            li {
+              &:nth-last-child(1) {
+                .dropdown-item {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+        &__content {
+          width: 100%;
+        }
+      }
     }
 
     .tab-content {
@@ -87,7 +115,7 @@
 
       .tab-pane {
         height: 100%;
-        .text-control{
+        .text-control {
           border: none;
         }
         &__content {
@@ -126,15 +154,15 @@
         width: 100%;
         margin-bottom: 16px;
       }
-      &.text-editor-control{
+      &.text-editor-control {
         position: relative;
-        .text-editor{
-          .select2-container{
-            width: 100%!important;
+        .text-editor {
+          .select2-container {
+            width: 100% !important;
           }
-          &__tool{
-            .slider-ranger{
-              &__value{
+          &__tool {
+            .slider-ranger {
+              &__value {
                 color: #656782;
                 font-size: 14px;
                 background-color: transparent;
@@ -144,9 +172,9 @@
             }
           }
         }
-        .content-sub{
+        .content-sub {
           position: relative;
-          display:block;
+          display: block;
           background: transparent;
           padding: 0;
         }
@@ -645,6 +673,19 @@
       &.cl-12:after {
         border-color: #fff;
       }
+    }
+  }
+}
+.modal{
+  &.action-setting{
+    .modal-dialog{
+      margin: 0;
+      width: 100%;
+      position:fixed;
+      top:auto;
+      right:auto;
+      left:auto;
+      bottom:0;
     }
   }
 }
