@@ -1,12 +1,38 @@
 <div class="tab-pane__content">
-  <h3 class="design__tool--title">Add your image</h3>
+  <div class="d-flex align-items-center justify-content-between">
+    <h3 class="design__tool--title">Add your image</h3>
+    <button class="btn d-block d-md-none p-0" id="close-tool-edit">
+      <svg
+        width="25"
+        height="25"
+        viewBox="0 0 25 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="5.42871"
+          y="4.45703"
+          width="21.25"
+          height="1.5"
+          rx="0.75"
+          transform="rotate(45 5.42871 4.45703)"
+          fill="#656782"
+        />
+        <rect
+          x="4.54492"
+          y="19.4834"
+          width="21.25"
+          height="1.5"
+          rx="0.75"
+          transform="rotate(-45 4.54492 19.4834)"
+          fill="#656782"
+        />
+      </svg>
+    </button>
+  </div>
   <p class="design__tool--description">Max file size of 50MB</p>
-  <button class="btn btn-primary w-100 mt-auto mb-2">
-    Add Image
-  </button>
-  <p class="design__tool--description">
-    Recently used uploaded pictures
-  </p>
+  <button class="btn btn-primary w-100 mt-auto mb-2">Add Image</button>
+  <p class="design__tool--description">Recently used uploaded pictures</p>
   <div class="design__tool--content">
     <div class="image-panel">
       <div class="row">
@@ -79,7 +105,5 @@
   </div>
 </div>
 <div class="action-save-design w-100">
-  <button class="btn btn-primary w-100 mt-auto">
-    Save my design
-  </button>
+  <button class="btn btn-primary w-100 mt-auto">Save my design</button>
 </div>

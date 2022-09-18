@@ -87,10 +87,23 @@
 
       .tab-pane {
         height: 100%;
-
+        .text-control{
+          border: none;
+        }
         &__content {
           min-height: calc(100% - 80px);
           padding: 20px;
+          &--text-editor {
+            .nav-link {
+              font-size: 14px;
+              border: none;
+              color: #656782;
+              &.active {
+                color: $black;
+                font-weight: bold;
+              }
+            }
+          }
         }
       }
 
@@ -113,8 +126,31 @@
         width: 100%;
         margin-bottom: 16px;
       }
-
-
+      &.text-editor-control{
+        position: relative;
+        .text-editor{
+          .select2-container{
+            width: 100%!important;
+          }
+          &__tool{
+            .slider-ranger{
+              &__value{
+                color: #656782;
+                font-size: 14px;
+                background-color: transparent;
+                border: none;
+                width: auto;
+              }
+            }
+          }
+        }
+        .content-sub{
+          position: relative;
+          display:block;
+          background: transparent;
+          padding: 0;
+        }
+      }
     }
 
     &--title {
@@ -259,7 +295,8 @@
           }
         }
 
-        .color-choices {}
+        .color-choices {
+        }
       }
 
       .text-content {
@@ -308,8 +345,8 @@
             &.active,
             &:hover {
               background-color: $black;
-              color: #Fff;
-              transition: .2s ease-in-out;
+              color: #fff;
+              transition: 0.2s ease-in-out;
             }
 
             &:nth-child(1) {
@@ -357,7 +394,7 @@
         .title {
           font-size: 16px;
           line-height: 19px;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-bottom: 0;
         }
       }
@@ -369,7 +406,7 @@
       }
 
       &__content {
-        background-color: #Fff;
+        background-color: #fff;
         padding: 20px 16px;
         .size {
           margin-bottom: 16px;
@@ -387,8 +424,8 @@
               justify-content: center;
               width: 32px;
               height: 32px;
-              background: #FFFFFF;
-              border: 0.714286px solid #D7DEF5;
+              background: #ffffff;
+              border: 0.714286px solid #d7def5;
               border-radius: 8px;
               color: #656782;
               font-size: 10px;
@@ -396,9 +433,13 @@
 
               &:hover,
               &.active {
-                color: #Fff;
-                transition: .2s ease-in-out;
-                background: linear-gradient(136.76deg, #FF2E57 -30.74%, #FF7439 178.75%);
+                color: #fff;
+                transition: 0.2s ease-in-out;
+                background: linear-gradient(
+                  136.76deg,
+                  #ff2e57 -30.74%,
+                  #ff7439 178.75%
+                );
               }
 
               &:nth-last-child(1) {
@@ -414,14 +455,14 @@
           &__control {
             display: flex;
             border-radius: 5px;
-            border: 1px solid #D7DEF5;
+            border: 1px solid #d7def5;
 
             .btn {
               width: 32px;
               display: flex;
               align-items: center;
               justify-content: center;
-              background-color: #Fff;
+              background-color: #fff;
             }
 
             .btn,
@@ -435,8 +476,8 @@
               font-weight: 500;
               text-align: center;
               width: 40px;
-              background: #DCE2F7;
-              border: 1px solid #D7DEF5;
+              background: #dce2f7;
+              border: 1px solid #d7def5;
             }
           }
         }
@@ -452,7 +493,7 @@
 
         .price-line-total {
           opacity: 1;
-          border-top: 1px solid #C6CDE7;
+          border-top: 1px solid #c6cde7;
         }
       }
     }
@@ -511,7 +552,7 @@
     transform: rotate(-45deg);
   }
 
-  input[type="radio"]:checked+label:after {
+  input[type="radio"]:checked + label:after {
     opacity: 1;
   }
 
