@@ -835,6 +835,11 @@ a {
       width: 100%; }
       .design__tool .nav-tabs .nav-item .nav-link {
         border: none; }
+      .design__tool .nav-tabs .nav-item .action-tool__content .dropdown-toggle {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .design__tool .nav-tabs .nav-item .action-tool__content .dropdown-toggle:after {
+          content: none; }
     .design__tool .tab-content {
       position: fixed;
       bottom: 0;

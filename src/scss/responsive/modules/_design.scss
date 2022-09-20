@@ -105,6 +105,17 @@
           .nav-link {
             border: none;
           }
+          .action-tool{
+            &__content{
+              .dropdown-toggle{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                &:after{
+                  content: none;
+                }
+              }
+            }
+          }
         }
       }
 
