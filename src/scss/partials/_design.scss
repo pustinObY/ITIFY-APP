@@ -257,7 +257,20 @@
           display: block;
 
           img {
+            margin-left:auto;
+            margin-right:auto;
             margin-bottom: 5px;
+            display:none;
+
+            &.active{
+              display: block;
+            }
+            &.default{
+              &.un{
+                display: none;
+              }
+              display: block;
+            }
           }
 
           &--name {
@@ -404,6 +417,14 @@
 
         .select2-selection--single {
           height: 30px;
+        }
+      }
+      &__icon{
+        .select-icon{
+          display: none;
+          &.active{
+            display: block;
+          }
         }
       }
     }
@@ -686,6 +707,28 @@
       right:auto;
       left:auto;
       bottom:0;
+    }
+  }
+  .select-view{
+    &__icon-back{
+      cursor: pointer;
+      .select-icon{
+        &:nth-child(1){
+          margin-right: 16px;
+        }
+        svg{
+          path{
+            fill: none;
+          }
+        }
+        &.active{
+          svg{
+            path{
+              fill: $black
+            }
+          }
+        }
+      }
     }
   }
 }

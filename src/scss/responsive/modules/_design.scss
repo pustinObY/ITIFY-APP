@@ -120,7 +120,7 @@
         .tab-pane{
           &__content{
             min-height: 236px;
-            max-height: calc(100vh - 230px);
+            max-height: 30vh;
           }
         }
       }
@@ -142,10 +142,31 @@
         }
       }
     }
+    &__view{
+      margin-top: 60px;
+      .select-view{
+        right: 16px;
+      }
+    }
   }
 }
 
-
+@media (min-width: 768px){
+  .design{
+    &__tool {
+      .tab-content{
+        &.text-editor-control{
+          display: none;
+        }
+      }
+    }
+  }
+  .modal{
+    .modal-dialog{
+      max-width: 650px;
+    }
+  }
+}
 @media (min-width: 992px) {
   .design {
     &__view {
@@ -155,5 +176,6 @@
         }
       }
     }
+
   }
 }

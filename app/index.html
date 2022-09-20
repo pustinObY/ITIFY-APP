@@ -126,6 +126,17 @@
   });
 </script>
 <script>
+  $(document).ready(function () {
+    $(".select-view__icon").click(function () {
+      $(".select-icon").toggleClass("active");
+    });
+    $(".select-view__icon-back").click(function () {
+      $(".select-icon").toggleClass("active");
+    });
+  });
+  
+</script>
+<script>
   $(".select-custom").select2({
     minimumResultsForSearch: -1,
   });

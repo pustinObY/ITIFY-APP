@@ -360,10 +360,18 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Save to My Design</a></li>
-                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Order print</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Order print</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Download</a></li>
                 <li>
-                  <a class="dropdown-item" href="#" >Share</a>
+                  <a class="dropdown-item" href="#">Share</a>
                 </li>
               </ul>
             </div>
@@ -421,19 +429,67 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 design__view d-flex">
-        <div class="design__view--modal d-none d-md-flex">
+        <div class="design__view--modal d-md-flex">
           <img src="../assets/img/modal-shirt.png" alt="" />
-          <div class="view-modal__action">
+          <div class="view-modal__action d-none d-md-flex">
             <button class="btn btn-primary active">Design</button>
-            <button class="btn btn-primary">Preview</button>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPreview"
+            >
+              Preview
+            </button>
           </div>
         </div>
 
         <div class="select-view">
-          <select class="form-control select-custom">
-            <option selected="selected">Front</option>
-            <option>Back</option>
-          </select>
+          <div class="d-none d-md-block">
+            <select class="form-control select-custom">
+              <option selected="selected">Front</option>
+              <option>Back</option>
+            </select>
+          </div>
+          <div class="d-block d-md-none select-view__icon">
+            <div class="select-icon active">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.906 18.8319C36.7449 17.8684 35.2921 9.3501 33.7037 6.9683C31.7827 4.086 27.9345 2.56163 26.3687 2.03995C25.9683 1.90597 25.5287 2.12349 25.3932 2.52702C24.7353 4.50073 22.754 6.62504 19.9582 6.62504C17.1624 6.62504 15.1812 4.50073 14.5233 2.52702C14.3878 2.12204 13.9527 1.90525 13.5477 2.03995C11.9819 2.56163 8.13381 4.086 6.21278 6.9683C4.62446 9.35002 3.17164 17.8683 3.01056 18.8319C2.95484 19.1654 3.12351 19.4966 3.42608 19.6479C3.49531 19.6825 5.15893 20.5001 7.62499 20.5001C8.15043 20.5001 8.67435 20.4632 9.16663 20.3947V36.6875C9.16663 36.945 9.29612 37.1858 9.50989 37.3289C9.61229 37.3974 12.107 39 19.9582 39C27.8095 39 30.3042 37.3974 30.4066 37.3289C30.6203 37.1858 30.7498 36.9449 30.7498 36.6875V20.3931C31.2587 20.4639 31.7751 20.5 32.2915 20.5C34.7575 20.5 36.4211 19.6825 36.4904 19.6478C36.7931 19.4966 36.9617 19.1653 36.906 18.8319Z"
+                  stroke="#2A2D46"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M36.906 18.8319C36.7449 17.8684 35.2921 9.3501 33.7037 6.9683C31.7826 4.086 27.9345 2.56163 26.3687 2.03995C25.9683 1.90597 25.5287 2.12349 25.3932 2.52702C24.7353 4.50073 22.754 6.62504 19.9582 6.62504C17.1624 6.62504 15.1812 4.50073 14.5233 2.52702C14.3878 2.12204 13.9527 1.90525 13.5477 2.03995C11.9819 2.56163 8.13381 4.086 6.21278 6.9683C4.62446 9.35002 3.17164 17.8683 3.01056 18.8319C2.95484 19.1654 3.12351 19.4966 3.42608 19.6479C3.49531 19.6825 5.15893 20.5001 7.62499 20.5001C8.15043 20.5001 8.67435 20.4632 9.16663 20.3947V36.6875C9.16663 36.945 9.29612 37.1858 9.50989 37.3289C9.61229 37.3974 12.107 39 19.9582 39C27.8095 39 30.3042 37.3974 30.4066 37.3289C30.6203 37.1858 30.7498 36.9449 30.7498 36.6875V20.3931C31.2587 20.4639 31.7751 20.5 32.2915 20.5C34.7575 20.5 36.4211 19.6825 36.4904 19.6478C36.7931 19.4966 36.9617 19.1653 36.906 18.8319Z"
+                  fill="#2A2D46"
+                  stroke="#2A2D46"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <div class="select-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.9496 18.33C36.7885 17.3664 35.3355 8.84719 33.7469 6.46513C31.8257 3.58252 27.9771 2.05799 26.4112 1.53625C24.4999 0.899439 22.9999 2.00076 20 2.00076C17.0001 2.00076 15.4999 0.898745 13.5888 1.53625C12.0228 2.05799 8.17428 3.58252 6.25304 6.46513C4.66455 8.84711 3.21157 17.3663 3.05047 18.33C2.99475 18.6635 3.16344 18.9948 3.46604 19.1461C3.53528 19.1807 5.19908 19.9984 7.66541 19.9984C8.48272 19.9984 9.20721 20.6223 9.20721 21.4396V36.1875C9.20721 36.4451 9.33672 36.6859 9.5505 36.829C9.65292 36.8975 12.1479 38.5003 20 38.5003C27.8521 38.5003 30.3471 36.8975 30.4494 36.829C30.6632 36.6859 30.7927 36.445 30.7927 36.1875V21.4381C30.7927 20.6207 31.5171 19.9983 32.3345 19.9983C34.8009 19.9983 36.4647 19.1807 36.5339 19.146C36.8367 18.9948 37.0053 18.6635 36.9496 18.33Z"
+                  fill="#2A2D46"
+                  stroke="#2A2D46"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <!-- ================== -->
         <!-- Start Order print showing Desktop -->
@@ -551,7 +607,7 @@
 >
   <div class="modal-dialog">
     <div class="modal-content design__view">
-      <div class="d-flex align-items-center justify-content-between  p-2">
+      <div class="d-flex align-items-center justify-content-between p-2">
         <h3 class="design__tool--title">Order print</h3>
         <button class="btn d-block d-md-none p-0" id="close-tool-edit">
           <svg
@@ -581,7 +637,6 @@
             />
           </svg>
         </button>
-       
       </div>
       <div class="order-print">
         <div class="order-print__content">
@@ -634,9 +689,7 @@
                 <h5 class="order-print__title">Total</h5>
                 <div class="price__value">$ 150</div>
               </div>
-              <button class="btn btn-primary w-100 mt-auto">
-                Add to cart
-              </button>
+              <button class="btn btn-primary w-100 mt-auto">Add to cart</button>
             </div>
           </div>
         </div>
@@ -646,3 +699,107 @@
 </div>
 <!-- ================== -->
 <!-- End Order print showing Desktop -->
+<!-- ================== -->
+<!-- Start Modal print Desktop -->
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="modalPreview"
+  tabindex="-1"
+  aria-labelledby="modalPreviewLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="d-flex justify-content-end">
+        <button
+          type="button"
+          class="btn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="4"
+              y="3"
+              width="25"
+              height="1.5"
+              rx="0.75"
+              transform="rotate(45 4 3)"
+              fill="#656782"
+            />
+            <rect
+              x="2.93945"
+              y="20.6777"
+              width="25"
+              height="1.5"
+              rx="0.75"
+              transform="rotate(-45 2.93945 20.6777)"
+              fill="#656782"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <h3 class="modal-title">TShirt - Ice Cream Summer</h3>
+          <p class="modal-author">by WorkoutCristian</p>
+        </div>
+        <div class="select-view">
+          <div class="select-view__icon-back d-flex align-items-center justify-content-end">
+            <div class="select-icon active">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.906 18.8319C36.7449 17.8684 35.2921 9.3501 33.7037 6.9683C31.7827 4.086 27.9345 2.56163 26.3687 2.03995C25.9683 1.90597 25.5287 2.12349 25.3932 2.52702C24.7353 4.50073 22.754 6.62504 19.9582 6.62504C17.1624 6.62504 15.1812 4.50073 14.5233 2.52702C14.3878 2.12204 13.9527 1.90525 13.5477 2.03995C11.9819 2.56163 8.13381 4.086 6.21278 6.9683C4.62446 9.35002 3.17164 17.8683 3.01056 18.8319C2.95484 19.1654 3.12351 19.4966 3.42608 19.6479C3.49531 19.6825 5.15893 20.5001 7.62499 20.5001C8.15043 20.5001 8.67435 20.4632 9.16663 20.3947V36.6875C9.16663 36.945 9.29612 37.1858 9.50989 37.3289C9.61229 37.3974 12.107 39 19.9582 39C27.8095 39 30.3042 37.3974 30.4066 37.3289C30.6203 37.1858 30.7498 36.9449 30.7498 36.6875V20.3931C31.2587 20.4639 31.7751 20.5 32.2915 20.5C34.7575 20.5 36.4211 19.6825 36.4904 19.6478C36.7931 19.4966 36.9617 19.1653 36.906 18.8319Z"
+                  stroke="#2A2D46"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M36.906 18.8319C36.7449 17.8684 35.2921 9.3501 33.7037 6.9683C31.7826 4.086 27.9345 2.56163 26.3687 2.03995C25.9683 1.90597 25.5287 2.12349 25.3932 2.52702C24.7353 4.50073 22.754 6.62504 19.9582 6.62504C17.1624 6.62504 15.1812 4.50073 14.5233 2.52702C14.3878 2.12204 13.9527 1.90525 13.5477 2.03995C11.9819 2.56163 8.13381 4.086 6.21278 6.9683C4.62446 9.35002 3.17164 17.8683 3.01056 18.8319C2.95484 19.1654 3.12351 19.4966 3.42608 19.6479C3.49531 19.6825 5.15893 20.5001 7.62499 20.5001C8.15043 20.5001 8.67435 20.4632 9.16663 20.3947V36.6875C9.16663 36.945 9.29612 37.1858 9.50989 37.3289C9.61229 37.3974 12.107 39 19.9582 39C27.8095 39 30.3042 37.3974 30.4066 37.3289C30.6203 37.1858 30.7498 36.9449 30.7498 36.6875V20.3931C31.2587 20.4639 31.7751 20.5 32.2915 20.5C34.7575 20.5 36.4211 19.6825 36.4904 19.6478C36.7931 19.4966 36.9617 19.1653 36.906 18.8319Z"
+                  fill="#2A2D46"
+                  stroke="#2A2D46"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <div class="select-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.9496 18.33C36.7885 17.3664 35.3355 8.84719 33.7469 6.46513C31.8257 3.58252 27.9771 2.05799 26.4112 1.53625C24.4999 0.899439 22.9999 2.00076 20 2.00076C17.0001 2.00076 15.4999 0.898745 13.5888 1.53625C12.0228 2.05799 8.17428 3.58252 6.25304 6.46513C4.66455 8.84711 3.21157 17.3663 3.05047 18.33C2.99475 18.6635 3.16344 18.9948 3.46604 19.1461C3.53528 19.1807 5.19908 19.9984 7.66541 19.9984C8.48272 19.9984 9.20721 20.6223 9.20721 21.4396V36.1875C9.20721 36.4451 9.33672 36.6859 9.5505 36.829C9.65292 36.8975 12.1479 38.5003 20 38.5003C27.8521 38.5003 30.3471 36.8975 30.4494 36.829C30.6632 36.6859 30.7927 36.445 30.7927 36.1875V21.4381C30.7927 20.6207 31.5171 19.9983 32.3345 19.9983C34.8009 19.9983 36.4647 19.1807 36.5339 19.146C36.8367 18.9948 37.0053 18.6635 36.9496 18.33Z"
+                  fill="#2A2D46"
+                  stroke="#2A2D46"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-main-content">
+       
+          <img src="../assets/img/icon-shirt-preview.png" alt="">
+          <button class="btn w-100 btn-primary-2 mt-4">Edit Design</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================== -->
+<!-- End Modal print Desktop -->
