@@ -104,12 +104,13 @@
         .nav-item {
           .nav-link {
             border: none;
+            padding: 16px;
           }
           .action-tool{
             &__content{
               .dropdown-toggle{
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 16px;
+                padding-bottom: 16px;
                 &:after{
                   content: none;
                 }

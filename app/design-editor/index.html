@@ -1838,6 +1838,9 @@
       <div class="col-md-7 col-lg-8 design__view d-flex">
         <div class="design__view--modal d-md-flex">
           <img src="../assets/img/modal-shirt.png" alt="" />
+          <div class="edit-center-form">
+            asdasds
+          </div>
           <div class="view-modal__action d-none d-md-flex">
             <button class="btn btn-primary active">Design</button>
             <button
@@ -2213,17 +2216,12 @@
 
 <!-- end design-editor.html-->
 <!-- start footer.html-->
-<script
-  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-  crossorigin="anonymous"
-></script>
+<div class="modal-open-toggle"></div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/ajax-loader.gif"></script>
@@ -2252,8 +2250,17 @@
     $(".select-view__icon-back").click(function () {
       $(".select-icon").toggleClass("active");
     });
+    $(".action-tool__content").click(function () {
+      $(".modal-open-toggle").addClass("show");
+    });
+    $(".modal-open-toggle").click(function () {
+      $(".modal-open-toggle").removeClass("show");
+    });
+    $(".dropdown-item").click(function () {
+      $(".modal-open-toggle").removeClass("show");
+    });
   });
-  
+
 </script>
 <script>
   $(".select-custom").select2({
@@ -2270,7 +2277,6 @@
   //   });
   // });
 </script>
-
 <!-- end footer.html-->
 </body>
 
