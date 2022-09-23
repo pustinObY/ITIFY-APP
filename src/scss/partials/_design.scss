@@ -94,9 +94,10 @@
             left: 0 !important;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            border:none;
+            border: none;
             --bs-backdrop-zindex: 999;
             z-index: var(--bs-backdrop-zindex);
+
             li {
               &:nth-last-child(1) {
                 .dropdown-item {
@@ -307,6 +308,7 @@
         border-radius: 5px;
         background-color: transparent;
         cursor: pointer;
+        margin-bottom: 4px;
 
         &:hover {
           transition: 0.3s ease-in-out;
@@ -377,12 +379,14 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      .edit-center-form{
+
+      .edit-center-form {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
       img {
         max-width: 100%;
       }
@@ -724,45 +728,6 @@
   }
 }
 
-.modal {
-  &.action-setting {
-    .modal-dialog {
-      margin: 0;
-      width: 100%;
-      position: fixed;
-      top: auto;
-      right: auto;
-      left: auto;
-      bottom: 0;
-    }
-  }
-
-  .select-view {
-    &__icon-back {
-      cursor: pointer;
-
-      .select-icon {
-        &:nth-child(1) {
-          margin-right: 16px;
-        }
-
-        svg {
-          path {
-            fill: none;
-          }
-        }
-
-        &.active {
-          svg {
-            path {
-              fill: $black
-            }
-          }
-        }
-      }
-    }
-  }
-}
 .text-editor {
   margin-top: 20px;
 

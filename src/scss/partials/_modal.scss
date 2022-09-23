@@ -1,0 +1,39 @@
+.modal {
+  &.action-setting {
+    .modal-dialog {
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      top: auto;
+      right: auto;
+      left: auto;
+      bottom: 0;
+    }
+  }
+
+  .select-view {
+    &__icon-back {
+      cursor: pointer;
+
+      .select-icon {
+        &:nth-child(1) {
+          margin-right: 16px;
+        }
+
+        svg {
+          path {
+            fill: none;
+          }
+        }
+
+        &.active {
+          svg {
+            path {
+              fill: $black
+            }
+          }
+        }
+      }
+    }
+  }
+}

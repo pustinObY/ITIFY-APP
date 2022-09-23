@@ -5,6 +5,7 @@
 @import 'input';
 @import 'reset';
 @import 'button';
+@import 'slider';
 @mixin size($w, $h) {
     width: $w;
     height: $h;

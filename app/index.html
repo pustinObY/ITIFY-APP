@@ -155,6 +155,35 @@
     variableWidth: true
   });
 </script>
+<script>
+
+</script>
+<script>
+  var init = {
+    rows: 2,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    variableWidth: true
+  };
+
+
+  $(function () {
+    var win = $(window);
+    var slider = $(".image-panel__item");
+
+    win.on("load resize", function () {
+      if (win.width() < 768) {
+        slider.not(".slick-initialized").slick(init);
+      } else if (slider.hasClass("slick-initialized")) {
+        slider.slick("unslick");
+      }
+    });
+  });
+</script>
 <!-- end footer.html-->
 </body>
 
