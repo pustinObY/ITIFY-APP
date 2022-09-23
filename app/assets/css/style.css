@@ -239,6 +239,10 @@ input[type="range"]::-ms-fill-upper {
   margin: auto;
   border: none; }
 
+.slick-next:before, .slick-prev:before {
+  font-size: 32px;
+  color: #2A2D46; }
+
 body {
   font-family: "Helvetica-neue";
   background-color: #F2F5FF; }
@@ -851,12 +855,13 @@ a {
 
 @media (max-width: 767.77px) {
   .design__tool {
-    position: absolute;
+    position: fixed;
     left: 0;
     padding-left: 0;
     padding-right: 0;
     bottom: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     .design__tool .nav-tabs {
       -ms-flex-direction: row;
           flex-direction: row;
@@ -879,7 +884,8 @@ a {
       background-color: #Fff;
       border-radius: 0;
       border-top-left-radius: 5px;
-      border-top-right-radius: 5px; }
+      border-top-right-radius: 5px;
+      z-index: 1; }
       .design__tool .tab-content .tab-pane__content {
         min-height: 236px;
         max-height: 30vh; }
@@ -896,11 +902,19 @@ a {
   .design__view {
     margin-top: 60px; }
     .design__view .select-view {
-      right: 16px; } }
+      right: 16px; }
+    .design__view--modal img {
+      max-width: 85%;
+      margin: auto; }
+  .design.editor {
+    min-height: 800px;
+    overflow-y: auto; } }
 
 @media (min-width: 768px) {
-  .design__tool .tab-content.text-editor-control {
-    display: none; }
+  .design__tool .tab-content {
+    min-height: 590px; }
+    .design__tool .tab-content.text-editor-control {
+      display: none; }
   .modal .modal-dialog {
     max-width: 650px; } }
 

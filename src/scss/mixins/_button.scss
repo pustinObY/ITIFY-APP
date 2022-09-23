@@ -29,3 +29,7 @@
     border: none;
   }
 }
+.slick-next:before, .slick-prev:before{
+  font-size: 32px;
+  color: $black;
+}

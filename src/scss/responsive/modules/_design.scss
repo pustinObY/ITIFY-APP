@@ -89,12 +89,13 @@
 @media (max-width:767.77px) {
   .design {
     &__tool {
-      position: absolute;
+      position: fixed;
       left: 0;
       padding-left: 0;
       padding-right: 0;
       bottom: 0;
       width: 100%;
+      z-index: 1;
 
       .nav-tabs {
         flex-direction: row;
@@ -106,12 +107,14 @@
             border: none;
             padding: 16px;
           }
-          .action-tool{
-            &__content{
-              .dropdown-toggle{
+
+          .action-tool {
+            &__content {
+              .dropdown-toggle {
                 padding-top: 16px;
                 padding-bottom: 16px;
-                &:after{
+
+                &:after {
                   content: none;
                 }
               }
@@ -129,56 +132,79 @@
         border-radius: 0;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        .tab-pane{
-          &__content{
+        z-index: 1;
+
+        .tab-pane {
+          &__content {
             min-height: 236px;
             max-height: 30vh;
           }
         }
       }
-      .content-sub{
+
+      .content-sub {
         height: auto;
         bottom: 0;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         background-color: #fff;
       }
-      &--content{
-        .type{
-          &__content{
+
+      &--content {
+        .type {
+          &__content {
             margin-bottom: 16px;
-            img{
+
+            img {
               width: 60px;
             }
           }
         }
       }
     }
-    &__view{
+
+    &__view {
       margin-top: 60px;
-      .select-view{
+
+      .select-view {
         right: 16px;
       }
+
+      &--modal {
+        img {
+          max-width: 85%;
+          margin: auto;
+        }
+      }
+    }
+
+    &.editor {
+      min-height: 800px;
+      overflow-y: auto;
     }
   }
 }
 
-@media (min-width: 768px){
-  .design{
+@media (min-width: 768px) {
+  .design {
     &__tool {
-      .tab-content{
-        &.text-editor-control{
+      .tab-content {
+        min-height: 590px;
+
+        &.text-editor-control {
           display: none;
         }
       }
     }
   }
-  .modal{
-    .modal-dialog{
+
+  .modal {
+    .modal-dialog {
       max-width: 650px;
     }
   }
 }
+
 @media (min-width: 992px) {
   .design {
     &__view {
