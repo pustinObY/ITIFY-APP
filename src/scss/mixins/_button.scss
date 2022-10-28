@@ -4,10 +4,15 @@
   border-radius: 3px;
 }
 .btn-primary-2 {
-  background: linear-gradient(91.43deg, #ff1851 -22.08%, #ff4244 109.59%);
+  background: linear-gradient(91.23deg, #FF2E57 -33.56%, #FF7439 163.57%);
   border-radius: 5px;
   color: #fff;
   padding: 12px 24px;
+  &:hover{
+    background: linear-gradient(91.43deg, #FF1851 -22.08%, #FF4244 109.59%);
+    transition: .3s ease-in-out;
+    color: #fff!important;
+  }
 }
 .btn {
   font-size: 14px;

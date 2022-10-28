@@ -1,0 +1,37 @@
+@media (max-width:991.77px) {
+  .best-product__content--item {
+    .infomation__content {
+      padding: 12px;
+    }
+  }
+}
+
+@media (max-width:767.77px) {
+  .modal-preview {
+    .modal-dialog {
+      height: 100%;
+      max-width: 100%;
+      margin: 0;
+
+      .modal-content {
+        min-height: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .best-product {
+    &__filter {
+      &--search {
+        .search-form {
+          .form-control {
+            width: 340px;
+          }
+        }
+      }
+    }
+
+  }
+}

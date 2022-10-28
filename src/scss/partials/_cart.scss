@@ -1,0 +1,169 @@
+.cart {
+  &__items {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #e0e5f8;
+    display: flex;
+    margin-bottom: 16px;
+
+    &--image {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &--content {
+      margin-left: 16px;
+
+      .title {
+        margin-bottom: 10px;
+
+        h3 {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: $black;
+        }
+      }
+
+      .list-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #656782;
+        margin-bottom: 8px;
+      }
+
+      .action {
+        &__price {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &__price {
+    &--title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 5px;
+      color: $black;
+    }
+
+    &--content {
+      .item-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        label {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 0;
+          color: $black-m;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: $black;
+        }
+      }
+    }
+
+    &--total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 0;
+        color: $black;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $black;
+      }
+    }
+  }
+}
+
+.cart-checkout {
+  &__content {
+    &--title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: $black;
+      margin-bottom: 16px;
+      &.small{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $black;
+        margin-bottom: 16px;
+      }
+    }
+
+    &--address {
+      .info-ship {
+        .title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: $black;
+          margin-bottom: 16px;
+        }
+
+        &__content {
+          padding: 16px;
+
+          .form-control,
+          .select2-container {
+            background: #E0E5F8;
+            border: 1px solid #CDD4EF;
+            border-radius: 3px;
+            font-size: 16px;
+          }
+
+          .form-control {
+            padding: 8px 16px;
+          }
+
+          .save-info {
+            margin-top: 24px;
+            .title {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 25px;
+            }
+            .checkbox-square, .radio-circle{
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .checkbox-square, .radio-circle{
+      border-radius: 50%;
+    }
+    .checkbox-design input:checked~.checkbox-square:before{
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@media (max-width:1199px){
+  .shop{
+    &__filter{
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 2;
+      padding: 24px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      transition: all .3s ease;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      transform: translateX(100%);
+      visibility: hidden;
+      &.show{
+        webkit-transform: translateX(0);
+        transform: translateX(0);
+        visibility: visible;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+    .infomation{
+      &__content{
+        &--star{
+          position: absolute;
+          bottom: 8px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.77px){
+  .title-head{
+    font-size: 30px;
+  }
+}

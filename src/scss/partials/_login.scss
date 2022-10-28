@@ -1,0 +1,34 @@
+.login-content{
+  background-image: url("../img/bg-login-2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.login{
+  &__content{
+    max-width: 380px;
+    margin: auto;
+    margin-top: 50px;
+    &--item{
+      margin-bottom: 20px;
+      .btn{
+        height: 50px;
+        font-size: 16px;
+        color: $black;
+        border: 1px solid $black-m;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        &:hover{
+          background-color: #fff;
+          border-color: #75778E;
+        }
+      }
+      svg{
+        margin-right: 12px;
+      }
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+    }
+  }
+}

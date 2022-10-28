@@ -5,3 +5,12 @@ $grey: #B2B6C3;
 $light-secondary: #E0E5F8;
 $secondary: #3E4269;
 $color-border: #E7ECFF;
+$black-m: #656782;
+
+.color-black {
+  color: $black  !important;
+}
+hr{
+  border-top: 1px solid #D5DAEB;
+  opacity: 1;
+}

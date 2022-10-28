@@ -1,0 +1,34 @@
+.pagination {
+  .page-link {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0 6px;
+    border: 1px solid #D7DEF5;
+    color: $black-m;
+  }
+
+  .page-item:last-child .page-link {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .page-item:first-child .page-link {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .page-item {
+    &.active {
+      .page-link {
+        background-color: $primary;
+        color: #Fff;
+      }
+    }
+  }
+}

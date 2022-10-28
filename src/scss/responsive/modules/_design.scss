@@ -1,3 +1,22 @@
+@media (max-with: 1199.77px){
+  .design {
+    &__tool {
+      .tab-content {
+        min-width: auto;
+      }
+
+      &--content {
+        .type {
+          &__content {
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 991.77px) {
   .design {
     &__tool {
@@ -130,14 +149,16 @@
         width: 100%;
         background-color: #Fff;
         border-radius: 0;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         z-index: 1;
 
         .tab-pane {
           &__content {
             min-height: 236px;
             max-height: 30vh;
+            // border-top-left-radius: 20px;
+            // border-top-right-radius: 20px;
           }
         }
       }
@@ -189,7 +210,7 @@
 
         .image-panel {
           .row>*{
-            width: auto;
+            // width: auto;
           }
           &__item {
             &--image {
@@ -218,12 +239,6 @@
         right: 16px;
       }
 
-      &--modal {
-        img {
-          max-width: 85%;
-          margin: auto;
-        }
-      }
     }
 
     &.editor {
@@ -238,10 +253,12 @@
     &__tool {
       .tab-content {
         min-height: 590px;
-
         &.text-editor-control {
           display: none;
         }
+      }
+      .nav-tabs{
+        height: calc(100vh - 350px);
       }
       .image-panel {
         img{
@@ -261,12 +278,26 @@
 @media (min-width: 992px) {
   .design {
     &__view {
-      .order-print {
-        &__content.collapse:not(.show) {
+      .order-print.default {
+        .order-print__content.collapse:not(.show) {
           display: block;
+        }
+      }
+      &--modal{
+        &.canvas-editor{
+          padding: 70px;
         }
       }
     }
 
+  }
+}
+@media (min-width: 1200px){
+  .design {
+    &__tool {
+      .tab-content {
+        min-width: 290px;
+      }
+    }
   }
 }
