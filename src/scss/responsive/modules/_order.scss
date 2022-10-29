@@ -1,0 +1,23 @@
+@media (min-width: 768px){
+  .order-history{
+    &__content{
+      .table > :not(caption) > * > * {
+        padding: 16px;
+      }
+      &--item { 
+        .order-list{
+          padding: 20px 30px;
+          &__item {
+            img{
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .title{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
