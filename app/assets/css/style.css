@@ -1572,6 +1572,11 @@ a {
       line-height: 19px;
       color: #656782;
       margin-bottom: 8px; }
+      .cart__items--content .list-item.price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2A2D46; }
     .cart__items--content .action__price {
       font-weight: 500;
       font-size: 20px;
@@ -1648,8 +1653,8 @@ a {
   padding: 16px; }
   .cart-checkout__content--address .info-ship__content .form-control,
   .cart-checkout__content--address .info-ship__content .select2-container {
-    background: #E0E5F8;
-    border: 1px solid #CDD4EF;
+    background: #e0e5f8;
+    border: 1px solid #cdd4ef;
     border-radius: 3px;
     font-size: 16px; }
   .cart-checkout__content--address .info-ship__content .form-control {
@@ -1660,10 +1665,12 @@ a {
       font-weight: 400;
       font-size: 16px;
       line-height: 25px; }
-    .cart-checkout__content--address .info-ship__content .save-info .checkbox-square, .cart-checkout__content--address .info-ship__content .save-info .radio-circle {
+    .cart-checkout__content--address .info-ship__content .save-info .checkbox-square,
+    .cart-checkout__content--address .info-ship__content .save-info .radio-circle {
       top: 5px; }
 
-.cart-checkout__content .checkbox-square, .cart-checkout__content .radio-circle {
+.cart-checkout__content .checkbox-square,
+.cart-checkout__content .radio-circle {
   border-radius: 50%; }
 
 .cart-checkout__content .checkbox-design input:checked ~ .checkbox-square:before {
