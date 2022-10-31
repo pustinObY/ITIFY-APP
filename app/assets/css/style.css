@@ -1642,6 +1642,12 @@ a {
     color: #2A2D46;
     margin-bottom: 16px; }
 
+.cart-checkout__content--description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #2A2D46; }
+
 .cart-checkout__content--address .info-ship .title {
   font-weight: 700;
   font-size: 16px;
@@ -1675,6 +1681,19 @@ a {
 
 .cart-checkout__content .checkbox-design input:checked ~ .checkbox-square:before {
   border-radius: 50%; }
+
+.card {
+  background-color: #e7ecff;
+  border: 1px solid #cdd4ef;
+  border-radius: 5px;
+  padding: 30px; }
+
+.payment__content--infomation {
+  margin-top: 16px; }
+  .payment__content--infomation input {
+    background: #d5dbf4;
+    border: 1px solid #cdd4ef;
+    border-radius: 3px; }
 
 .order-history tbody,
 .order-history td,

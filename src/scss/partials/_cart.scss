@@ -125,7 +125,12 @@
         margin-bottom: 16px;
       }
     }
-
+    &--description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: $black;
+    }
     &--address {
       .info-ship {
         .title {
@@ -172,6 +177,24 @@
     }
     .checkbox-design input:checked ~ .checkbox-square:before {
       border-radius: 50%;
+    }
+  }
+}
+.card {
+  background-color: #e7ecff;
+  border: 1px solid #cdd4ef;
+  border-radius: 5px;
+  padding: 30px;
+}
+.payment {
+  &__content {
+    &--infomation {
+      margin-top: 16px;
+      input {
+        background: #d5dbf4;
+        border: 1px solid #cdd4ef;
+        border-radius: 3px;
+      }
     }
   }
 }

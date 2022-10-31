@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 
 <head>
-    <title>Design</title>
+    <title>Cart payment</title>
 <!-- start head.html-->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -171,11 +171,17 @@
   </nav>
 </header>
 <!-- end header.html-->
-<!-- start cart-checkout.html-->
+<!-- start cart-payment.html-->
 <section class="content-wrapper">
   <nav class="breadcrumb-show">
     <div class="container">
-      <a href="javascript:(0)" class="breadcrumb-show__item" aria-current="page">Cart</a>
+      <a
+        href="javascript:(0)"
+        class="breadcrumb-show__item"
+        aria-current="page"
+      >
+        Cart</a
+      >
       <p class="breadcrumb-show__description">
         Print your desired look on ready-made shirts with various sizes and
         colors.
@@ -188,7 +194,7 @@
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item"><a href="#">Shop</a></li>
         <li class="breadcrumb-item"><a href="#">Cart</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+        <li class="breadcrumb-item active" aria-current="page">Payment</li>
       </ol>
     </div>
   </nav>
@@ -197,281 +203,186 @@
       <div class="row">
         <div class="col-md-8">
           <div class="cart-checkout__content">
-            <h3 class="cart-checkout__content--title">Checkout</h3>
-            <div class="cart-checkout__content--address">
-              <div class="info-ship mb-4">
-                <div class="title">Shipping information</div>
-                <label class="checkbox-design">
-                  <input type="radio" name="programming">
-                  <span class="checkbox-square"></span>
-                  huongmai@gmail.com <br />
-                  01 Hai Nam Street, Hoa Cuong Ward, Hai Chau District, Da Nang City, Viet Nam.<br />(+84) 985 874 754
-                </label>
-              </div>
-              <div class="info-ship mb-4">
-                <label class="checkbox-design">
-                  <input type="radio" name="programming">
-                  <span class="checkbox-square"></span>
-                  <span class="title">Add new shipping address</span>
-                </label>
-                <div class="info-ship__content">
-                  <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-12">
-                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <input type="text" class="form-control" placeholder="Street address" id="validationCustom03"
-                        required>
-                      <div class="invalid-feedback">
-                        Please provide a valid city.
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <input type="text" class="form-control" placeholder="Apt / Suite/ Other (optional)"
-                        id="validationCustom03" required>
-                      <div class="invalid-feedback">
-                        Please provide a valid city.
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" placeholder="City" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-6 mt-md-0 mt-3">
-                          <select class="form-control select-custom">
-                            <option selected="selected">State</option>
-                            <option>white</option>
-                            <option>purple</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" id="validationCustom03" placeholder="Zipcode"
-                            required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-6 mt-md-0 mt-3">
-                          <select class="form-control select-custom">
-                            <option selected="selected">Country</option>
-                            <option>white</option>
-                            <option>purple</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" placeholder="Email" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-6 mt-md-0 mt-3">
-                          <input type="text" class="form-control" placeholder="Phone" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <label class="checkbox-design save-info">
-                    <input type="radio" name="programming">
-                    <span class="checkbox-square"></span>
-                    <span class="title">Save this information for next time</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr class="py-3 py-md-4">
-            <h3 class="cart-checkout__content--title small">Your order</h3>
-            <div class="cart__items">
-              <img
-                src="../assets/img/shop-img.png"
-                class="cart__items--image"
-                alt=""
-              />
-              <div class="cart__items--content w-100">
-                <div class="title d-flex justify-content-between">
-                  <h3 class="mb-0">Infinity Run Flyknit 3</h3>
-                  <button class="btn p-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="4"
-                        y="3"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(45 4 3)"
-                        fill="#656782"
+            <h3 class="cart-checkout__content--title">Payment</h3>
+            <p class="cart-checkout__content--description">
+              All transactions are secure and encrypted.
+            </p>
+            <div class="payment">
+              <div class="payment__content card">
+                <div class="payment-item">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                    data-bs-toggle="collapse "
+                    data-bs-target=".multi-collapse"
+                    href="#visaCollapse"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="visaCollapse paypalCollapse"
+                  >
+                    <label class="checkbox-design">
+                      <input type="radio" name="programming" />
+                      <span class="checkbox-square checked"></span>
+                      <span class="title">Credit Card</span>
+                    </label>
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/img/visa.png" class="ms-2" alt="" />
+                      <img
+                        src="../assets/img/mastercard.png"
+                        class="ms-2"
+                        alt=""
                       />
-                      <rect
-                        x="2.93945"
-                        y="20.6777"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(-45 2.93945 20.6777)"
-                        fill="#656782"
+                      <img
+                        src="../assets/img/american-express.png"
+                        class="ms-2"
+                        alt=""
                       />
-                    </svg>
-                  </button>
-                </div>
-                <p class="list-item">T-Shirt Men</p>
-                <p class="list-item">Color: Black</p>
-                <p class="list-item">Size: XXL</p>
-                <div
-                  class="action d-flex justify-content-between align-items-center"
-                >
-                  <div class="quality__control">
-                    <button class="btn p-0">
-                      <img src="../assets/img/minus-control.png" alt="" />
-                    </button>
-                    <input type="text" value="1" />
-                    <button class="btn p-0">
-                      <img src="../assets/img/plus-control.png" alt="" />
-                    </button>
+                    </div>
                   </div>
-                  <p class="action__price mb-0">$40</p>
-                </div>
-              </div>
-            </div>
-            <div class="cart__items">
-              <img
-                src="../assets/img/shop-img.png"
-                class="cart__items--image"
-                alt=""
-              />
-              <div class="cart__items--content w-100">
-                <div class="title d-flex justify-content-between">
-                  <h3 class="mb-0">Infinity Run Flyknit 3</h3>
-                  <button class="btn p-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="4"
-                        y="3"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(45 4 3)"
-                        fill="#656782"
-                      />
-                      <rect
-                        x="2.93945"
-                        y="20.6777"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(-45 2.93945 20.6777)"
-                        fill="#656782"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <p class="list-item">T-Shirt Men</p>
-                <p class="list-item">Color: Black</p>
-                <p class="list-item">Size: XXL</p>
-                <div
-                  class="action d-flex justify-content-between align-items-center"
-                >
-                  <div class="quality__control">
-                    <button class="btn p-0">
-                      <img src="../assets/img/minus-control.png" alt="" />
-                    </button>
-                    <input type="text" value="1" />
-                    <button class="btn p-0">
-                      <img src="../assets/img/plus-control.png" alt="" />
-                    </button>
+                  <div
+                    class="payment__content--infomation collapse multi-collapse show"
+                    id="visaCollapse"
+                  >
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01"
+                          value="3423 3423 3242 2342"
+                          required
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name on card"
+                          id="validationCustom03"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Expiration date"
+                              id="validationCustom03"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-md-0 mt-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Expiration date"
+                              id="validationCustom03"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  <p class="action__price mb-0">$40</p>
                 </div>
-              </div>
-            </div>
-            <div class="cart__items">
-              <img
-                src="../assets/img/shop-img.png"
-                class="cart__items--image"
-                alt=""
-              />
-              <div class="cart__items--content w-100">
-                <div class="title d-flex justify-content-between">
-                  <h3 class="mb-0">Infinity Run Flyknit 3</h3>
-                  <button class="btn p-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="4"
-                        y="3"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(45 4 3)"
-                        fill="#656782"
+                <hr>
+                <div class="payment-item">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                    data-bs-toggle="collapse "
+                    data-bs-target=".multi-collapse"
+                    href="#paypalCollapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="visaCollapse paypalCollapse"
+                  >
+                    <label class="checkbox-design">
+                      <input type="radio" name="programming" />
+                      <span class="checkbox-square checked"></span>
+                      <span class="title">Credit Card</span>
+                    </label>
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/img/visa.png" class="ms-2" alt="" />
+                      <img
+                        src="../assets/img/mastercard.png"
+                        class="ms-2"
+                        alt=""
                       />
-                      <rect
-                        x="2.93945"
-                        y="20.6777"
-                        width="25"
-                        height="1.5"
-                        rx="0.75"
-                        transform="rotate(-45 2.93945 20.6777)"
-                        fill="#656782"
+                      <img
+                        src="../assets/img/american-express.png"
+                        class="ms-2"
+                        alt=""
                       />
-                    </svg>
-                  </button>
-                </div>
-                <p class="list-item">T-Shirt Men</p>
-                <p class="list-item">Color: Black</p>
-                <p class="list-item">Size: XXL</p>
-                <div
-                  class="action d-flex justify-content-between align-items-center"
-                >
-                  <div class="quality__control">
-                    <button class="btn p-0">
-                      <img src="../assets/img/minus-control.png" alt="" />
-                    </button>
-                    <input type="text" value="1" />
-                    <button class="btn p-0">
-                      <img src="../assets/img/plus-control.png" alt="" />
-                    </button>
+                    </div>
                   </div>
-                  <p class="action__price mb-0">$40</p>
+                  <div
+                    class="payment__content--infomation collapse multi-collapse"
+                    id="paypalCollapse"
+                  >
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01"
+                          value="3423 3423 3242 2342"
+                          required
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name on card"
+                          id="validationCustom03"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Expiration date"
+                              id="validationCustom03"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-md-0 mt-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Expiration date"
+                              id="validationCustom03"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -509,7 +420,8 @@
     </div>
   </div>
 </section>
-<!-- end cart-checkout.html-->
+
+<!-- end cart-payment.html-->
     
     <div class="design-editor-style">
 <!-- start footer.html-->
