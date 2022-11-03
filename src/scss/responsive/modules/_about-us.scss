@@ -1,0 +1,19 @@
+@media (min-width: 768px){
+  .profile{
+    &__content{
+      max-width: 730px;
+      margin: auto;
+      .btn{
+        width: 250px;
+      }
+    }
+  }
+}
+@media (min-width: 992px){
+  .profile{
+    &__content{
+      max-width: 730px;
+      margin: auto;
+    }
+  }
+}

@@ -359,9 +359,16 @@ input[type="range"]::-ms-fill-upper {
         height: 32px; }
 
 .btn-primary {
-  border: 1px solid #2A2D46;
-  background-color: #2A2D46;
-  border-radius: 3px; }
+  border: 1px solid #B7C0DD;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #FF434D; }
+
+.btn-white {
+  background: #FFFFFF;
+  border: 1px solid #B7C0DD;
+  border-radius: 5px;
+  color: #2A2D46; }
 
 .btn-primary-2 {
   background: linear-gradient(91.23deg, #FF2E57 -33.56%, #FF7439 163.57%);
@@ -1694,6 +1701,11 @@ a {
     background: #d5dbf4;
     border: 1px solid #cdd4ef;
     border-radius: 3px; }
+  .payment__content--infomation .description-payment {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #2A2D46; }
 
 .order-history tbody,
 .order-history td,
@@ -1809,6 +1821,37 @@ a {
         .order-history__content--item .order-list__total span.total-value {
           font-weight: 700;
           margin-left: 8px; }
+
+.profile .form-control,
+.profile .select2-container {
+  background: #e0e5f8;
+  border: 1px solid #cdd4ef;
+  border-radius: 3px;
+  font-size: 16px; }
+
+.profile .form-control:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #989AB9;
+  opacity: 1;
+  /* Firefox */ }
+
+.profile .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #989AB9;
+  opacity: 1;
+  /* Firefox */ }
+
+.profile .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #989AB9; }
+
+.profile .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #989AB9; }
+
+.profile__content .btn {
+  font-size: 14px;
+  width: 100%; }
 
 .footer {
   background-color: #2A2D46;
@@ -2199,6 +2242,18 @@ a {
       height: 100px; }
     .order-history__content--item .order-list .title {
       font-size: 18px; } }
+
+@media (min-width: 768px) {
+  .profile__content {
+    max-width: 730px;
+    margin: auto; }
+    .profile__content .btn {
+      width: 250px; } }
+
+@media (min-width: 992px) {
+  .profile__content {
+    max-width: 730px;
+    margin: auto; } }
 
 @media (max-width: 767.77px) {
   .footer__title {

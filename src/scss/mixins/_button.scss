@@ -1,7 +1,14 @@
 .btn-primary {
-  border: 1px solid $black;
-  background-color: $black;
-  border-radius: 3px;
+  border: 1px solid #B7C0DD;
+  background-color: #fff;
+  border-radius: 5px;
+  color: $primary;
+}
+.btn-white {
+  background: #FFFFFF;
+  border: 1px solid #B7C0DD;
+  border-radius: 5px;
+  color: $black;
 }
 .btn-primary-2 {
   background: linear-gradient(91.23deg, #FF2E57 -33.56%, #FF7439 163.57%);

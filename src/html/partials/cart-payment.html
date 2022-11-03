@@ -38,12 +38,11 @@
                 <div class="payment-item">
                   <div
                     class="d-flex align-items-center justify-content-between"
-                    data-bs-toggle="collapse "
-                    data-bs-target=".multi-collapse"
+                    data-bs-toggle="collapse"
                     href="#visaCollapse"
                     role="button"
                     aria-expanded="true"
-                    aria-controls="visaCollapse paypalCollapse"
+                    aria-controls="visaCollapse"
                   >
                     <label class="checkbox-design">
                       <input type="radio" name="programming" />
@@ -65,7 +64,7 @@
                     </div>
                   </div>
                   <div
-                    class="payment__content--infomation collapse multi-collapse show"
+                    class="payment__content--infomation collapse show"
                     id="visaCollapse"
                   >
                     <form class="row g-3 needs-validation" novalidate>
@@ -126,12 +125,11 @@
                 <div class="payment-item">
                   <div
                     class="d-flex align-items-center justify-content-between"
-                    data-bs-toggle="collapse "
-                    data-bs-target=".multi-collapse"
-                    href="#paypalCollapse"
+                    data-bs-toggle="collapse"
+                    href="#visaCollapse"
                     role="button"
-                    aria-expanded="false"
-                    aria-controls="visaCollapse paypalCollapse"
+                    aria-expanded="true"
+                    aria-controls="visaCollapse"
                   >
                     <label class="checkbox-design">
                       <input type="radio" name="programming" />
@@ -139,75 +137,16 @@
                       <span class="title">Credit Card</span>
                     </label>
                     <div class="d-flex align-items-center">
-                      <img src="../assets/img/visa.png" class="ms-2" alt="" />
-                      <img
-                        src="../assets/img/mastercard.png"
-                        class="ms-2"
-                        alt=""
-                      />
-                      <img
-                        src="../assets/img/american-express.png"
-                        class="ms-2"
-                        alt=""
-                      />
+                      <img src="../assets/img/paypal.png" class="ms-2" alt="" />
                     </div>
                   </div>
                   <div
-                    class="payment__content--infomation collapse multi-collapse"
-                    id="paypalCollapse"
+                    class="payment__content--infomation collapse "
+                    id="visaCollapse"
                   >
-                    <form class="row g-3 needs-validation" novalidate>
-                      <div class="col-12">
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationCustom01"
-                          value="3423 3423 3242 2342"
-                          required
-                        />
-                        <div class="valid-feedback">Looks good!</div>
-                      </div>
-                      <div class="col-12">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Name on card"
-                          id="validationCustom03"
-                          required
-                        />
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Expiration date"
-                              id="validationCustom03"
-                              required
-                            />
-                            <div class="invalid-feedback">
-                              Please provide a valid city.
-                            </div>
-                          </div>
-                          <div class="col-md-6 mt-md-0 mt-3">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Expiration date"
-                              id="validationCustom03"
-                              required
-                            />
-                            <div class="invalid-feedback">
-                              Please provide a valid city.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
+                   <div class="text-center description-payment p-4">
+                    After clicking “Complete order”, you will be redirected to PayPal to complete your purchase securely.
+                   </div>
                   </div>
                 </div>
               </div>
