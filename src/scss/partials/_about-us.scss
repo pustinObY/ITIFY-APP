@@ -1,28 +1,5 @@
 .profile {
-  .form-control,
-  .select2-container {
-    background: #e0e5f8;
-    border: 1px solid #cdd4ef;
-    border-radius: 3px;
-    font-size: 16px;
-  }
-  .form-control {
-    &::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #989AB9;
-      opacity: 1; /* Firefox */
-    }
-
-    &:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #989AB9;
-    }
-
-    &::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #989AB9;
-    }
-  }
+  
   &__content{
     .btn{
       font-size: 14px;

@@ -30,7 +30,8 @@
   background-color: #f8f9ff;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: #e0e5f8;
   transition: 0.3s;
   color: $black;
@@ -198,19 +199,19 @@ input[type="range"]::-ms-fill-upper {
 
   ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #989AB9;
+    color: #989ab9;
     opacity: 1;
     /* Firefox */
   }
 
   :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #989AB9;
+    color: #989ab9;
   }
 
   ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #989AB9;
+    color: #989ab9;
   }
 }
 
@@ -241,7 +242,7 @@ input[type="range"]::-ms-fill-upper {
   height: 12px;
   top: 4px;
   left: 0px;
-  border: 1px solid #C6CDE7;
+  border: 1px solid #c6cde7;
   background: #ffffff;
   border-radius: 3px;
 }
@@ -250,15 +251,15 @@ input[type="range"]::-ms-fill-upper {
   border-radius: 50%;
 }
 
-.checkbox-design input:checked~.checkbox-square,
-.radio-design input:checked~.radio-circle {
+.checkbox-design input:checked ~ .checkbox-square,
+.radio-design input:checked ~ .radio-circle {
   background: transparent;
   -webkit-animation: CheckRadioAnimation 250ms linear;
   animation: CheckRadioAnimation 250ms linear;
 }
 
-.checkbox-design input:checked~.checkbox-square:before {
-  content: '';
+.checkbox-design input:checked ~ .checkbox-square:before {
+  content: "";
   width: 6px;
   height: 6px;
   top: 2px;
@@ -269,8 +270,8 @@ input[type="range"]::-ms-fill-upper {
   position: absolute;
 }
 
-.radio-design input:checked~.radio-circle:before {
-  content: '';
+.radio-design input:checked ~ .radio-circle:before {
+  content: "";
   position: absolute;
   top: 4px;
   left: 4px;
@@ -283,24 +284,24 @@ input[type="range"]::-ms-fill-upper {
 @-webkit-keyframes CheckRadioAnimation {
   from {
     -webkit-transform: scale(1.2);
-    opacity: 0.1
+    opacity: 0.1;
   }
 
   to {
     -webkit-transform: scale(1);
-    opacity: 0.7
+    opacity: 0.7;
   }
 }
 
 @keyframes CheckRadioAnimation {
   from {
     transform: scale(1.2);
-    opacity: 0.1
+    opacity: 0.1;
   }
 
   to {
     transform: scale(1);
-    opacity: 0.7
+    opacity: 0.7;
   }
 }
 
@@ -381,4 +382,31 @@ input[type="range"]::-ms-fill-upper {
       }
     }
   }
+}
+.form-control,
+.select2-container {
+  background: #e0e5f8;
+  border: 1px solid #cdd4ef;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.form-control {
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #989ab9;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #989ab9;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #989ab9;
+  }
+}
+textarea{
+  border-radius: 3px;
 }

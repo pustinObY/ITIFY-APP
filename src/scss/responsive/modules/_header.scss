@@ -20,12 +20,10 @@
       .cart-user-item {
         order: 3;
       }
-
-
     }
 
     .navbar-collapse {
-      background: #FFFFFF;
+      background: #ffffff;
       font-size: 20px;
       line-height: 24px;
       padding: 20px;
@@ -37,8 +35,8 @@
       z-index: 700;
       overflow-y: auto;
       overflow-x: hidden;
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
@@ -76,7 +74,7 @@
     }
     .cart-user-item {
       .dropdown-menu {
-        background: #FFFFFF;
+        background: #ffffff;
         line-height: 24px;
         height: 100%;
         width: 417px;
@@ -86,8 +84,8 @@
         z-index: 700;
         overflow-y: auto;
         overflow-x: hidden;
-        -webkit-transition: all .3s ease;
-        transition: all .3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
         -webkit-transform: translateX(100%);
@@ -103,9 +101,8 @@
         .dropdown-item {
           font-size: 20px;
           padding: 20px;
-
         }
-    
+
         &.show {
           webkit-transform: translateX(0);
           -ms-transform: translateX(0);
@@ -114,12 +111,11 @@
           -webkit-overflow-scrolling: touch;
         }
       }
-      .dropdown-menu[data-bs-popper]{
+      .dropdown-menu[data-bs-popper] {
         right: 0;
         left: auto;
       }
     }
-
   }
 }
 
@@ -138,32 +134,37 @@
         }
       }
     }
-    .cart-user-item{
-      .dropdown-menu{
+    .cart-user-item {
+      .dropdown-menu {
         width: 100%;
       }
     }
-
-   
+    .navbar-nav {
+      .nav-link {
+        padding: 18px 20px;
+      }
+    }
   }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 @media (min-width: 1200px) {
   .header {
-
-    .navbar>.container,
-    .navbar>.container-fluid,
-    .navbar>.container-lg,
-    .navbar>.container-md,
-    .navbar>.container-sm,
-    .navbar>.container-xl,
-    .navbar>.container-xxl {
+    .navbar > .container,
+    .navbar > .container-fluid,
+    .navbar > .container-lg,
+    .navbar > .container-md,
+    .navbar > .container-sm,
+    .navbar > .container-xl,
+    .navbar > .container-xxl {
       justify-content: flex-between;
     }
   }

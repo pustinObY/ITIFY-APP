@@ -2,7 +2,11 @@
   border: 1px solid #B7C0DD;
   background-color: #fff;
   border-radius: 5px;
-  color: $primary;
+  color: $black;
+  &:hover{
+    transition: .3s ease-in-out;
+    color: $primary;
+  }
 }
 .btn-white {
   background: #FFFFFF;
@@ -13,12 +17,13 @@
 .btn-primary-2 {
   background: linear-gradient(91.23deg, #FF2E57 -33.56%, #FF7439 163.57%);
   border-radius: 5px;
-  color: #fff;
+  color: #F2F5FF;
   padding: 12px 24px;
+  transition: all .3s ease-in-out;
   &:hover{
     background: linear-gradient(91.43deg, #FF1851 -22.08%, #FF4244 109.59%);
     transition: .3s ease-in-out;
-    color: #fff!important;
+    color: #F2F5FF!important;
   }
 }
 .btn {
