@@ -1,9 +1,89 @@
 .profile {
-  
-  &__content{
-    .btn{
+  &__content {
+    .btn {
       font-size: 14px;
       width: 100%;
+    }
+  }
+}
+.about {
+  &__infomation {
+    &--title {
+      margin-bottom: 60px;
+      .sub-title {
+        color: $black;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 25px;
+        color: $black;
+        margin-bottom: 16px;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #656782;
+      }
+    }
+  }
+  &__process {
+    .row {
+      --bs-gutter-x: 1.5rem;
+    }
+    background-color: #fff;
+    padding: 60px 60px 70px;
+    &--content {
+      .head-process {
+        margin-bottom: 10px;
+        display: flex;
+        h3 {
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+        &__title {
+          font-weight: 500;
+          line-height: 28px;
+          color: $black;
+          &--sub {
+            color: #656782;
+          }
+        }
+      }
+      .content-process {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #656782;
+      }
+    }
+  }
+  &__work {
+    padding: 60px 0;
+    &--title {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 25px;
+      color: $black;
+      margin-bottom: 13px;
+    }
+    &--description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #656782;
+      margin-bottom: 20px;
+    }
+    .text-center {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      color: $black;
     }
   }
 }
