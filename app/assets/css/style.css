@@ -2806,3 +2806,25 @@ a {
 @media (max-width: 767.77px) {
   .footer__title {
     margin-top: 24px; } }
+
+.blendmode {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  height: 100vh; }
+  .blendmode .blendmode-item {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .blendmode img {
+    max-width: 100%; }
+  .blendmode .blendmode-item:nth-child(1) {
+    z-index: 4;
+    mix-blend-mode: multiply; }
+  .blendmode .blendmode-item:nth-child(2) {
+    z-index: 3; }
+  .blendmode .blendmode-item:nth-child(3) {
+    z-index: 2;
+    mix-blend-mode: multiply; }
+  .blendmode .blendmode-item:nth-child(1) {
+    z-index: 1; }
