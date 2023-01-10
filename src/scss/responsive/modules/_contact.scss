@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .contact {
+    &__infomation {
+      margin-right: 12px;
+    }
+    &__form {
+      margin-left: 12px;
+      .btn {
+        max-width: 285px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    &__infomation {
+      padding-bottom: 30px;
+    }
+    &__form {
+      margin-top: 0;
+    }
+  }
+}

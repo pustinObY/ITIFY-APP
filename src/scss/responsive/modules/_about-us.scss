@@ -1,0 +1,25 @@
+@media (min-width: 768px){
+  .profile{
+    &__content{
+      max-width: 730px;
+      margin: auto;
+      .btn{
+        width: 250px;
+      }
+    }
+  }
+  .about{
+    &__process{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+@media (min-width: 992px){
+  .profile{
+    &__content{
+      max-width: 730px;
+      margin: auto;
+    }
+  }
+}
