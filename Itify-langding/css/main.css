@@ -1,0 +1,21 @@
+.ps-0 {
+  padding-left: 0 !important;
+}
+.pr-16{
+  padding-right: 16%  !important;
+}
+.bg-white{
+  background-color: #fff !important;
+}
+.w-100{
+  width: 100% !important;
+}
+.justify-content-center{
+  justify-content: center !important;
+}
+.me-auto{
+  margin-left: auto !important;
+}
+.text-center{
+  text-align: center !important;
+}
