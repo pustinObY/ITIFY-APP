@@ -10,25 +10,25 @@
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
-// @import 'partials/_header.scss';
+@import 'partials/_header.scss';
 @import 'partials/_mixins.scss';
-// @import 'partials/_design.scss';
-// @import 'partials/_login.scss';
+@import 'partials/_design.scss';
+@import 'partials/_login.scss';
 @import 'partials/_home.scss';
-// @import 'partials/_template.scss';
-// @import 'partials/_shop.scss';
-// @import 'partials/_cart.scss';
-// @import 'partials/_order.scss';
-// @import 'partials/_about-us.scss';
-// @import 'partials/_contact.scss';
-// @import 'partials/_share-design.scss';
+@import 'partials/_template.scss';
+@import 'partials/_shop.scss';
+@import 'partials/_cart.scss';
+@import 'partials/_order.scss';
+@import 'partials/_about-us.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_share-design.scss';
 @import 'partials/_footer.scss';
 
-// @import 'partials/_policy.scss';
+@import 'partials/_policy.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
 //Responsive
 @import 'responsive/responsive.scss';
-// @import 'partials/_blendmode.scss';
+@import 'partials/_blendmode.scss';

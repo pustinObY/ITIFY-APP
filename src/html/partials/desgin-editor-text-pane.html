@@ -1,678 +1,179 @@
 <div class="tab-pane__content position-relative">
   <div class="text-content">
-    <div class="d-none d-md-block">
-      <div>
-        <div class="d-flex align-items-center justify-content-between">
-          <h3 class="design__tool--title">Select text</h3>
-        </div>
-
-        <div class="design__tool--content">
-          <textarea
-            class="text-place"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button class="btn btn-primary w-100 mt-auto">Add Text</button>
-          <div class="text-editor">
-            <div class="text-editor__font-select">
-              <select class="form-control select-custom">
-                <option selected="selected">orange</option>
-                <option>white</option>
-                <option>purple</option>
-              </select>
-            </div>
-            <div class="text-editor__tool">
-              <div class="select-editor d-flex align-items-center">
-                <div class="select-editor__item" id="pick-color">
-                  <img src="../assets/img/icon-picker-color.png" alt="" />
-                </div>
-                <div class="select-editor__item">
-                  <svg
-                    width="13"
-                    height="15"
-                    viewBox="0 0 13 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.41304 5.07142C3.41304 5.6237 3.86075 6.07142 4.41304 6.07142H6.86955C8.26085 6.07142 8.9565 5.47618 8.9565 4.28571C8.9565 3.13725 8.1739 2.56302 6.60868 2.56302H4.41304C3.86075 2.56302 3.41304 3.01074 3.41304 3.56302V5.07142ZM0 1C0 0.447715 0.447715 0 1 0H7.30433C10.6087 0 12.2608 1.23949 12.2608 3.71848C12.2608 5.14705 11.5579 6.19046 10.1522 6.84873C11.0942 7.10083 11.8043 7.56301 12.2826 8.23528C12.7608 8.89354 13 9.69886 13 10.6512C13 12.0798 12.471 13.1652 11.413 13.9075C10.3551 14.6358 9.05795 15 7.52172 15H0.999999C0.447715 15 0 14.5523 0 14V1ZM3.41304 11.437C3.41304 11.9892 3.86075 12.437 4.41304 12.437H7.0652C8.74636 12.437 9.58694 11.7787 9.58694 10.4622C9.58694 9.0336 8.7681 8.31931 7.13042 8.31931H4.41304C3.86075 8.31931 3.41304 8.76703 3.41304 9.31931V11.437Z"
-                      fill="#2A2D46"
-                    />
-                  </svg>
-                </div>
-                <div class="select-editor__item active">
-                  <svg
-                    width="9"
-                    height="16"
-                    viewBox="0 0 9 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.92534 0.799891C4.97209 0.566179 5.17729 0.397949 5.41563 0.397949H6.29583C6.61135 0.397949 6.848 0.686611 6.78612 0.996007L3.98612 14.996C3.93938 15.2297 3.73417 15.3979 3.49583 15.3979H2.61564C2.30012 15.3979 2.06347 15.1093 2.12535 14.7999L4.92534 0.799891Z"
-                      fill="#2A2D46"
-                    />
-                    <rect
-                      x="2.3811"
-                      y="0.397949"
-                      width="6.49999"
-                      height="2"
-                      rx="0.999998"
-                      fill="#2A2D46"
-                    />
-                    <rect
-                      x="-0.00012207"
-                      y="13.3979"
-                      width="6.59999"
-                      height="2"
-                      rx="0.999998"
-                      fill="#2A2D46"
-                    />
-                  </svg>
-                </div>
-                <div class="select-editor__item">
-                  <svg
-                    width="13"
-                    height="16"
-                    viewBox="0 0 13 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.224 8.06799V0.5C1.224 0.223858 1.44786 0 1.724 0H2.97399C3.25014 0 3.47399 0.223858 3.47399 0.5V7.32999C3.47399 7.76199 3.48599 8.11599 3.50999 8.39199C3.53399 8.66799 3.59999 8.99799 3.70799 9.38199C3.81599 9.75399 3.97199 10.048 4.17599 10.264C4.37999 10.48 4.67399 10.666 5.05799 10.822C5.45399 10.978 5.93399 11.056 6.49799 11.056C7.06199 11.056 7.53599 10.978 7.91999 10.822C8.31598 10.666 8.61598 10.48 8.81998 10.264C9.02398 10.048 9.17998 9.75399 9.28798 9.38199C9.39598 8.99799 9.46198 8.66799 9.48598 8.39199C9.50998 8.11599 9.52198 7.76199 9.52198 7.32999V0.5C9.52198 0.223858 9.74584 0 10.022 0H11.272C11.5481 0 11.772 0.223858 11.772 0.5V8.06799C11.772 9.67599 11.298 10.9 10.35 11.74C9.41398 12.58 8.12998 13 6.49799 13C4.86599 13 3.57599 12.58 2.628 11.74C1.692 10.9 1.224 9.67599 1.224 8.06799Z"
-                      fill="#2A2D46"
-                    />
-                    <path
-                      d="M0 15.5C0 15.2239 0.223857 15 0.499999 15H12.496C12.7721 15 12.996 15.2239 12.996 15.5C12.996 15.7761 12.7721 16 12.496 16H0.499999C0.223857 16 0 15.7761 0 15.5Z"
-                      fill="#2A2D46"
-                    />
-                  </svg>
-                </div>
-                <div class="select-editor__item">
-                  <svg
-                    width="18"
-                    height="16"
-                    viewBox="0 0 18 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      y="4.7998"
-                      width="8"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#A3ACCB"
-                    />
-                    <rect
-                      y="9.6001"
-                      width="17.6"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#A3ACCB"
-                    />
-                    <rect width="16" height="1.6" rx="0.8" fill="#A3ACCB" />
-                    <rect
-                      y="14.3999"
-                      width="12.8"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#A3ACCB"
-                    />
-                  </svg>
-                </div>
-                <div class="select-editor__item">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="1.6001"
-                      y="4.7998"
-                      width="12.8"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#2A2D46"
-                    />
-                    <rect
-                      x="0.000244141"
-                      y="9.6001"
-                      width="16"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#2A2D46"
-                    />
-                    <rect width="16" height="1.6" rx="0.8" fill="#2A2D46" />
-                    <rect
-                      x="4.00024"
-                      y="14.3999"
-                      width="8"
-                      height="1.6"
-                      rx="0.8"
-                      fill="#2A2D46"
-                    />
-                  </svg>
-                </div>
-                <div class="select-editor__item">
-                  <svg
-                    width="18"
-                    height="16"
-                    viewBox="0 0 18 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="8"
-                      height="1.6"
-                      rx="0.8"
-                      transform="matrix(-1 0 0 1 18 4.7998)"
-                      fill="#A3ACCB"
-                    />
-                    <rect
-                      width="17.6"
-                      height="1.6"
-                      rx="0.8"
-                      transform="matrix(-1 0 0 1 18 9.6001)"
-                      fill="#A3ACCB"
-                    />
-                    <rect
-                      width="16"
-                      height="1.6"
-                      rx="0.8"
-                      transform="matrix(-1 0 0 1 18 0)"
-                      fill="#A3ACCB"
-                    />
-                    <rect
-                      width="12.8"
-                      height="1.6"
-                      rx="0.8"
-                      transform="matrix(-1 0 0 1 18 14.3999)"
-                      fill="#A3ACCB"
-                    />
-                  </svg>
-                </div>
+    <div class="text-library">
+      <div class="d-none d-md-block">
+        <div class="design__tool--content mt-0">
+          <button id="clickOpenAddText" class="btn btn-primary-2 w-100 mt-auto">Add Text</button>
+          <div class="image-panel mt-3 pt-3 text-image">
+            <div class="row">
+              <div class="col-6">
+                <img src="../assets/img/text-img-1.webp" alt="" class="mw-100">
               </div>
-              <div class="slider-ranger mb-3">
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="title mb-0">Spacing</p>
-                  <input type="text" class="slider-ranger__value" value="100" />
-                </div>
-                <div class="custum-range-slider custum-range-slider-second">
-                  <input
-                    class="custum-range-slider__range"
-                    value="0"
-                    min="0"
-                    max="100"
-                    type="range"
-                  />
-                </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-2.webp" alt="" class="mw-100">
               </div>
-              <div class="slider-ranger">
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="title mb-0">Opacity</p>
-                  <input type="text" class="slider-ranger__value" value="100" />
-                </div>
-                <div class="custum-range-slider custum-range-slider-second">
-                  <input
-                    class="custum-range-slider__range"
-                    value="0"
-                    min="0"
-                    max="100"
-                    type="range"
-                  />
-                </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-3.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-4.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-5.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-6.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-7.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-8.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-9.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-10.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-1.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-2.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-3.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-4.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-5.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-6.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-7.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-8.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-9.webp" alt="" class="mw-100">
+              </div>
+              <div class="col-6">
+                <img src="../assets/img/text-img-10.webp" alt="" class="mw-100">
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="content-sub color">
-        <div class="text-content select-color">
-          <h3 class="design__tool--title">Text colors</h3>
-          <p class="design__tool--description">Select text colors design</p>
+    </div>
+    <div class="text-content-editor d-none">
+      <div class="d-none d-md-block">
+        <div>
+          <div id="clickBackTextForm" class="d-flex align-items-center ">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.4289 3.57107L7.70711 11.2929C7.31658 11.6834 7.31658 12.3166 7.70711 12.7071L15.4289 20.4289"
+                stroke="#656782" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+
+            <h3 class="design__tool--title">Text</h3>
+          </div>
           <div class="design__tool--content">
-            <h3 class="text-content__title">Default</h3>
-            <div class="text-editor__tool">
-              <div class="select-editor">
-                <div class="select-editor__item">
-                  <img src="../assets/img/color-add.png" alt="" />
+            <textarea class="text-place" name="" id="" cols="30" rows="10"></textarea>
+            <div class="text-editor">
+              <div class="text-editor__font-select">
+                <select class="form-control select-custom">
+                  <option selected="selected">orange</option>
+                  <option>white</option>
+                  <option>purple</option>
+                </select>
+              </div>
+              <div class="text-editor__tool">
+                <div class="select-editor d-flex align-items-center">
+                  <div class="select-editor__item" id="pick-color">
+                    <img src="../assets/img/icon-picker-color.png" alt="" />
+                  </div>
+                  <div class="select-editor__item">
+                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.41304 5.07142C3.41304 5.6237 3.86075 6.07142 4.41304 6.07142H6.86955C8.26085 6.07142 8.9565 5.47618 8.9565 4.28571C8.9565 3.13725 8.1739 2.56302 6.60868 2.56302H4.41304C3.86075 2.56302 3.41304 3.01074 3.41304 3.56302V5.07142ZM0 1C0 0.447715 0.447715 0 1 0H7.30433C10.6087 0 12.2608 1.23949 12.2608 3.71848C12.2608 5.14705 11.5579 6.19046 10.1522 6.84873C11.0942 7.10083 11.8043 7.56301 12.2826 8.23528C12.7608 8.89354 13 9.69886 13 10.6512C13 12.0798 12.471 13.1652 11.413 13.9075C10.3551 14.6358 9.05795 15 7.52172 15H0.999999C0.447715 15 0 14.5523 0 14V1ZM3.41304 11.437C3.41304 11.9892 3.86075 12.437 4.41304 12.437H7.0652C8.74636 12.437 9.58694 11.7787 9.58694 10.4622C9.58694 9.0336 8.7681 8.31931 7.13042 8.31931H4.41304C3.86075 8.31931 3.41304 8.76703 3.41304 9.31931V11.437Z"
+                        fill="#2A2D46" />
+                    </svg>
+                  </div>
+                  <div class="select-editor__item active">
+                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.92534 0.799891C4.97209 0.566179 5.17729 0.397949 5.41563 0.397949H6.29583C6.61135 0.397949 6.848 0.686611 6.78612 0.996007L3.98612 14.996C3.93938 15.2297 3.73417 15.3979 3.49583 15.3979H2.61564C2.30012 15.3979 2.06347 15.1093 2.12535 14.7999L4.92534 0.799891Z"
+                        fill="#2A2D46" />
+                      <rect x="2.3811" y="0.397949" width="6.49999" height="2" rx="0.999998" fill="#2A2D46" />
+                      <rect x="-0.00012207" y="13.3979" width="6.59999" height="2" rx="0.999998" fill="#2A2D46" />
+                    </svg>
+                  </div>
+                  <div class="select-editor__item">
+                    <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.224 8.06799V0.5C1.224 0.223858 1.44786 0 1.724 0H2.97399C3.25014 0 3.47399 0.223858 3.47399 0.5V7.32999C3.47399 7.76199 3.48599 8.11599 3.50999 8.39199C3.53399 8.66799 3.59999 8.99799 3.70799 9.38199C3.81599 9.75399 3.97199 10.048 4.17599 10.264C4.37999 10.48 4.67399 10.666 5.05799 10.822C5.45399 10.978 5.93399 11.056 6.49799 11.056C7.06199 11.056 7.53599 10.978 7.91999 10.822C8.31598 10.666 8.61598 10.48 8.81998 10.264C9.02398 10.048 9.17998 9.75399 9.28798 9.38199C9.39598 8.99799 9.46198 8.66799 9.48598 8.39199C9.50998 8.11599 9.52198 7.76199 9.52198 7.32999V0.5C9.52198 0.223858 9.74584 0 10.022 0H11.272C11.5481 0 11.772 0.223858 11.772 0.5V8.06799C11.772 9.67599 11.298 10.9 10.35 11.74C9.41398 12.58 8.12998 13 6.49799 13C4.86599 13 3.57599 12.58 2.628 11.74C1.692 10.9 1.224 9.67599 1.224 8.06799Z"
+                        fill="#2A2D46" />
+                      <path
+                        d="M0 15.5C0 15.2239 0.223857 15 0.499999 15H12.496C12.7721 15 12.996 15.2239 12.996 15.5C12.996 15.7761 12.7721 16 12.496 16H0.499999C0.223857 16 0 15.7761 0 15.5Z"
+                        fill="#2A2D46" />
+                    </svg>
+                  </div>
+                  <div class="select-editor__item">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="4.7998" width="8" height="1.6" rx="0.8" fill="#A3ACCB" />
+                      <rect y="9.6001" width="17.6" height="1.6" rx="0.8" fill="#A3ACCB" />
+                      <rect width="16" height="1.6" rx="0.8" fill="#A3ACCB" />
+                      <rect y="14.3999" width="12.8" height="1.6" rx="0.8" fill="#A3ACCB" />
+                    </svg>
+                  </div>
+                  <div class="select-editor__item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1.6001" y="4.7998" width="12.8" height="1.6" rx="0.8" fill="#2A2D46" />
+                      <rect x="0.000244141" y="9.6001" width="16" height="1.6" rx="0.8" fill="#2A2D46" />
+                      <rect width="16" height="1.6" rx="0.8" fill="#2A2D46" />
+                      <rect x="4.00024" y="14.3999" width="8" height="1.6" rx="0.8" fill="#2A2D46" />
+                    </svg>
+                  </div>
+                  <div class="select-editor__item">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="8" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 4.7998)" fill="#A3ACCB" />
+                      <rect width="17.6" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 9.6001)" fill="#A3ACCB" />
+                      <rect width="16" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 0)" fill="#A3ACCB" />
+                      <rect width="12.8" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 14.3999)" fill="#A3ACCB" />
+                    </svg>
+                  </div>
                 </div>
-                <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioOne"
-                    name="account"
-                    checked
-                  />
-                  <label for="radioOne" class="radio cl-1" checked></label>
+                <div class="slider-ranger mb-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="title mb-0">Spacing</p>
+                    <input type="text" class="slider-ranger__value" value="100" />
+                  </div>
+                  <div class="custum-range-slider custum-range-slider-second">
+                    <input class="custum-range-slider__range" value="0" min="0" max="100" type="range" />
+                  </div>
                 </div>
-                <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioTwo"
-                    name="account"
-                  />
-                  <label for="radioTwo" class="radio cl-2"></label>
+                <div class="slider-ranger">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="title mb-0">Opacity</p>
+                    <input type="text" class="slider-ranger__value" value="100" />
+                  </div>
+                  <div class="custum-range-slider custum-range-slider-second">
+                    <input class="custum-range-slider__range" value="0" min="0" max="100" type="range" />
+                  </div>
                 </div>
-                <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioThree"
-                    name="account"
-                  />
-                  <label for="radioThree" class="radio cl-3"></label>
-                </div>
-              </div>
-            </div>
-            <h3 class="text-content__title">Suggested</h3>
-            <div class="color-suggest">
-              <div class="color-choices">
-                <input
-                  type="radio"
-                  value="None"
-                  id="radioOne"
-                  name="account"
-                  checked
-                />
-                <label for="radioOne" class="radio cl-1" checked></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radioTwo" name="account" />
-                <label for="radioTwo" class="radio cl-2"></label>
-              </div>
-              <div class="color-choices">
-                <input
-                  type="radio"
-                  value="None"
-                  id="radioThree"
-                  name="account"
-                />
-                <label for="radioThree" class="radio cl-3"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio4" name="account" />
-                <label for="radio4" class="radio cl-4"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio5" name="account" />
-                <label for="radio5" class="radio cl-5"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio6" name="account" />
-                <label for="radio6" class="radio cl-6"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-7"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-8"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-9"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-10"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-11"></label>
-              </div>
-              <div class="color-choices">
-                <input type="radio" value="None" id="radio7" name="account" />
-                <label for="radio7" class="radio cl-12"></label>
               </div>
             </div>
           </div>
         </div>
-        <div class="action-save-design w-100">
-          <button class="btn btn-primary w-100 mt-auto">Done</button>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h3 class="design__tool--title">Text</h3>
-      <button class="btn d-block d-md-none p-0" id="close-tool-edit">
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="5.42871"
-            y="4.45703"
-            width="21.25"
-            height="1.5"
-            rx="0.75"
-            transform="rotate(45 5.42871 4.45703)"
-            fill="#656782"
-          />
-          <rect
-            x="4.54492"
-            y="19.4834"
-            width="21.25"
-            height="1.5"
-            rx="0.75"
-            transform="rotate(-45 4.54492 19.4834)"
-            fill="#656782"
-          />
-        </svg>
-      </button>
-    </div>
-
-    <nav class="tab-pane__content--text-editor mb-3 d-block d-md-none">
-      <div class="nav nav-tabs text-control" id="nav-text" role="tablist">
-        <button
-          class="nav-link active"
-          id="nav-type-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-type"
-          type="button"
-          role="tab"
-          aria-controls="nav-type"
-          aria-selected="true"
-        >
-          Type
-        </button>
-        <button
-          class="nav-link"
-          id="nav-font-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-font"
-          type="button"
-          role="tab"
-          aria-controls="nav-font"
-          aria-selected="false"
-        >
-          Font
-        </button>
-        <button
-          class="nav-link"
-          id="nav-style-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-style"
-          type="button"
-          role="tab"
-          aria-controls="nav-style"
-          aria-selected="false"
-        >
-          Style
-        </button>
-        <button
-          class="nav-link"
-          id="nav-color-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-color"
-          type="button"
-          role="tab"
-          aria-controls="nav-color"
-          aria-selected="false"
-        >
-          Color
-        </button>
-        <button
-          class="nav-link"
-          id="nav-spacing-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-spacing"
-          type="button"
-          role="tab"
-          aria-controls="nav-spacing"
-          aria-selected="false"
-        >
-          Spacing
-        </button>
-        <button
-          class="nav-link"
-          id="nav-opacity-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-opacity"
-          type="button"
-          role="tab"
-          aria-controls="nav-opacity"
-          aria-selected="false"
-        >
-          Opacity
-        </button>
-      </div>
-    </nav>
-    <div class="tab-content text-editor-control" id="nav-textContent">
-      <div
-        class="tab-pane fade show active"
-        id="nav-type"
-        role="tabpanel"
-        aria-labelledby="nav-type-tab"
-        tabindex="0"
-      >
-        <div class="design__tool--content">
-          <textarea
-            class="text-place"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-font"
-        role="tabpanel"
-        aria-labelledby="nav-font-tab"
-        tabindex="0"
-      >
-        <div class="text-editor">
-          <select class="form-control select-custom w-100">
-            <option selected="selected">orange</option>
-            <option>white</option>
-            <option>purple</option>
-          </select>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-style"
-        role="tabpanel"
-        aria-labelledby="nav-style-tab"
-        tabindex="0"
-      >
-        <div class="text-editor">
-          <div class="text-editor__tool">
-            <div
-              class="select-editor d-flex align-items-center justify-content-center"
-            >
-              <div class="select-editor__item me-3">
-                <svg
-                  width="13"
-                  height="15"
-                  viewBox="0 0 13 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.41304 5.07142C3.41304 5.6237 3.86075 6.07142 4.41304 6.07142H6.86955C8.26085 6.07142 8.9565 5.47618 8.9565 4.28571C8.9565 3.13725 8.1739 2.56302 6.60868 2.56302H4.41304C3.86075 2.56302 3.41304 3.01074 3.41304 3.56302V5.07142ZM0 1C0 0.447715 0.447715 0 1 0H7.30433C10.6087 0 12.2608 1.23949 12.2608 3.71848C12.2608 5.14705 11.5579 6.19046 10.1522 6.84873C11.0942 7.10083 11.8043 7.56301 12.2826 8.23528C12.7608 8.89354 13 9.69886 13 10.6512C13 12.0798 12.471 13.1652 11.413 13.9075C10.3551 14.6358 9.05795 15 7.52172 15H0.999999C0.447715 15 0 14.5523 0 14V1ZM3.41304 11.437C3.41304 11.9892 3.86075 12.437 4.41304 12.437H7.0652C8.74636 12.437 9.58694 11.7787 9.58694 10.4622C9.58694 9.0336 8.7681 8.31931 7.13042 8.31931H4.41304C3.86075 8.31931 3.41304 8.76703 3.41304 9.31931V11.437Z"
-                    fill="#2A2D46"
-                  />
-                </svg>
-              </div>
-              <div class="select-editor__item me-3 active">
-                <svg
-                  width="9"
-                  height="16"
-                  viewBox="0 0 9 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.92534 0.799891C4.97209 0.566179 5.17729 0.397949 5.41563 0.397949H6.29583C6.61135 0.397949 6.848 0.686611 6.78612 0.996007L3.98612 14.996C3.93938 15.2297 3.73417 15.3979 3.49583 15.3979H2.61564C2.30012 15.3979 2.06347 15.1093 2.12535 14.7999L4.92534 0.799891Z"
-                    fill="#2A2D46"
-                  />
-                  <rect
-                    x="2.3811"
-                    y="0.397949"
-                    width="6.49999"
-                    height="2"
-                    rx="0.999998"
-                    fill="#2A2D46"
-                  />
-                  <rect
-                    x="-0.00012207"
-                    y="13.3979"
-                    width="6.59999"
-                    height="2"
-                    rx="0.999998"
-                    fill="#2A2D46"
-                  />
-                </svg>
-              </div>
-              <div class="select-editor__item me-3">
-                <svg
-                  width="13"
-                  height="16"
-                  viewBox="0 0 13 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.224 8.06799V0.5C1.224 0.223858 1.44786 0 1.724 0H2.97399C3.25014 0 3.47399 0.223858 3.47399 0.5V7.32999C3.47399 7.76199 3.48599 8.11599 3.50999 8.39199C3.53399 8.66799 3.59999 8.99799 3.70799 9.38199C3.81599 9.75399 3.97199 10.048 4.17599 10.264C4.37999 10.48 4.67399 10.666 5.05799 10.822C5.45399 10.978 5.93399 11.056 6.49799 11.056C7.06199 11.056 7.53599 10.978 7.91999 10.822C8.31598 10.666 8.61598 10.48 8.81998 10.264C9.02398 10.048 9.17998 9.75399 9.28798 9.38199C9.39598 8.99799 9.46198 8.66799 9.48598 8.39199C9.50998 8.11599 9.52198 7.76199 9.52198 7.32999V0.5C9.52198 0.223858 9.74584 0 10.022 0H11.272C11.5481 0 11.772 0.223858 11.772 0.5V8.06799C11.772 9.67599 11.298 10.9 10.35 11.74C9.41398 12.58 8.12998 13 6.49799 13C4.86599 13 3.57599 12.58 2.628 11.74C1.692 10.9 1.224 9.67599 1.224 8.06799Z"
-                    fill="#2A2D46"
-                  />
-                  <path
-                    d="M0 15.5C0 15.2239 0.223857 15 0.499999 15H12.496C12.7721 15 12.996 15.2239 12.996 15.5C12.996 15.7761 12.7721 16 12.496 16H0.499999C0.223857 16 0 15.7761 0 15.5Z"
-                    fill="#2A2D46"
-                  />
-                </svg>
-              </div>
-              <div class="select-editor__item me-3">
-                <svg
-                  width="18"
-                  height="16"
-                  viewBox="0 0 18 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    y="4.7998"
-                    width="8"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#A3ACCB"
-                  />
-                  <rect
-                    y="9.6001"
-                    width="17.6"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#A3ACCB"
-                  />
-                  <rect width="16" height="1.6" rx="0.8" fill="#A3ACCB" />
-                  <rect
-                    y="14.3999"
-                    width="12.8"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#A3ACCB"
-                  />
-                </svg>
-              </div>
-              <div class="select-editor__item me-3">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="1.6001"
-                    y="4.7998"
-                    width="12.8"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#2A2D46"
-                  />
-                  <rect
-                    x="0.000244141"
-                    y="9.6001"
-                    width="16"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#2A2D46"
-                  />
-                  <rect width="16" height="1.6" rx="0.8" fill="#2A2D46" />
-                  <rect
-                    x="4.00024"
-                    y="14.3999"
-                    width="8"
-                    height="1.6"
-                    rx="0.8"
-                    fill="#2A2D46"
-                  />
-                </svg>
-              </div>
-              <div class="select-editor__item me-3">
-                <svg
-                  width="18"
-                  height="16"
-                  viewBox="0 0 18 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="8"
-                    height="1.6"
-                    rx="0.8"
-                    transform="matrix(-1 0 0 1 18 4.7998)"
-                    fill="#A3ACCB"
-                  />
-                  <rect
-                    width="17.6"
-                    height="1.6"
-                    rx="0.8"
-                    transform="matrix(-1 0 0 1 18 9.6001)"
-                    fill="#A3ACCB"
-                  />
-                  <rect
-                    width="16"
-                    height="1.6"
-                    rx="0.8"
-                    transform="matrix(-1 0 0 1 18 0)"
-                    fill="#A3ACCB"
-                  />
-                  <rect
-                    width="12.8"
-                    height="1.6"
-                    rx="0.8"
-                    transform="matrix(-1 0 0 1 18 14.3999)"
-                    fill="#A3ACCB"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-color"
-        role="tabpanel"
-        aria-labelledby="nav-color-tab"
-        tabindex="0"
-      >
         <div class="content-sub color">
           <div class="text-content select-color">
+            <h3 class="design__tool--title">Text colors</h3>
+            <p class="design__tool--description">Select text colors design</p>
             <div class="design__tool--content">
               <h3 class="text-content__title">Default</h3>
               <div class="text-editor__tool">
@@ -681,31 +182,15 @@
                     <img src="../assets/img/color-add.png" alt="" />
                   </div>
                   <div class="color-choices">
-                    <input
-                      type="radio"
-                      value="None"
-                      id="radioOne"
-                      name="account"
-                      checked
-                    />
+                    <input type="radio" value="None" id="radioOne" name="account" checked />
                     <label for="radioOne" class="radio cl-1" checked></label>
                   </div>
                   <div class="color-choices">
-                    <input
-                      type="radio"
-                      value="None"
-                      id="radioTwo"
-                      name="account"
-                    />
+                    <input type="radio" value="None" id="radioTwo" name="account" />
                     <label for="radioTwo" class="radio cl-2"></label>
                   </div>
                   <div class="color-choices">
-                    <input
-                      type="radio"
-                      value="None"
-                      id="radioThree"
-                      name="account"
-                    />
+                    <input type="radio" value="None" id="radioThree" name="account" />
                     <label for="radioThree" class="radio cl-3"></label>
                   </div>
                 </div>
@@ -713,31 +198,15 @@
               <h3 class="text-content__title">Suggested</h3>
               <div class="color-suggest">
                 <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioOne"
-                    name="account"
-                    checked
-                  />
+                  <input type="radio" value="None" id="radioOne" name="account" checked />
                   <label for="radioOne" class="radio cl-1" checked></label>
                 </div>
                 <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioTwo"
-                    name="account"
-                  />
+                  <input type="radio" value="None" id="radioTwo" name="account" />
                   <label for="radioTwo" class="radio cl-2"></label>
                 </div>
                 <div class="color-choices">
-                  <input
-                    type="radio"
-                    value="None"
-                    id="radioThree"
-                    name="account"
-                  />
+                  <input type="radio" value="None" id="radioThree" name="account" />
                   <label for="radioThree" class="radio cl-3"></label>
                 </div>
                 <div class="color-choices">
@@ -779,50 +248,223 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-spacing"
-        role="tabpanel"
-        aria-labelledby="nav-spacing-tab"
-        tabindex="0"
-      >
-        <div class="text-editor__tool">
-          <div class="slider-ranger d-flex align-items-center mb-3">
-              <div class="custum-range-slider custum-range-slider-second  w-100 me-3">
-                <input
-                  class="custum-range-slider__range w-100"
-                  value="0"
-                  min="0"
-                  max="100"
-                  type="range"
-                />
-              </div>
-             <span class="slider-ranger__value">15px</span>
+          <div class="action-save-design w-100">
+            <button class="btn btn-primary w-100 mt-auto">Done</button>
           </div>
         </div>
       </div>
-      <div
-        class="tab-pane fade"
-        id="nav-opacity"
-        role="tabpanel"
-        aria-labelledby="nav-opacity-tab"
-        tabindex="0"
-      >
-        <div class="text-editor__tool">
-          <div class="slider-ranger d-flex align-items-center mb-3">
-            <div class="custum-range-slider custum-range-slider-second  w-100 me-3">
-              <input
-                class="custum-range-slider__range w-100"
-                value="0"
-                min="0"
-                max="100"
-                type="range"
-              />
-            </div>
-           <span class="slider-ranger__value">150</span>
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h3 class="design__tool--title">Text</h3>
+        <button class="btn d-block d-md-none p-0" id="close-tool-edit">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5.42871" y="4.45703" width="21.25" height="1.5" rx="0.75" transform="rotate(45 5.42871 4.45703)"
+              fill="#656782" />
+            <rect x="4.54492" y="19.4834" width="21.25" height="1.5" rx="0.75" transform="rotate(-45 4.54492 19.4834)"
+              fill="#656782" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="tab-pane__content--text-editor mb-3 d-block d-md-none">
+        <div class="nav nav-tabs text-control" id="nav-text" role="tablist">
+          <button class="nav-link active" id="nav-type-tab" data-bs-toggle="tab" data-bs-target="#nav-type"
+            type="button" role="tab" aria-controls="nav-type" aria-selected="true">
+            Type
+          </button>
+          <button class="nav-link" id="nav-font-tab" data-bs-toggle="tab" data-bs-target="#nav-font" type="button"
+            role="tab" aria-controls="nav-font" aria-selected="false">
+            Font
+          </button>
+          <button class="nav-link" id="nav-style-tab" data-bs-toggle="tab" data-bs-target="#nav-style" type="button"
+            role="tab" aria-controls="nav-style" aria-selected="false">
+            Style
+          </button>
+          <button class="nav-link" id="nav-color-tab" data-bs-toggle="tab" data-bs-target="#nav-color" type="button"
+            role="tab" aria-controls="nav-color" aria-selected="false">
+            Color
+          </button>
+          <button class="nav-link" id="nav-spacing-tab" data-bs-toggle="tab" data-bs-target="#nav-spacing" type="button"
+            role="tab" aria-controls="nav-spacing" aria-selected="false">
+            Spacing
+          </button>
+          <button class="nav-link" id="nav-opacity-tab" data-bs-toggle="tab" data-bs-target="#nav-opacity" type="button"
+            role="tab" aria-controls="nav-opacity" aria-selected="false">
+            Opacity
+          </button>
         </div>
+      </nav>
+      <div class="tab-content text-editor-control" id="nav-textContent">
+        <div class="tab-pane fade show active" id="nav-type" role="tabpanel" aria-labelledby="nav-type-tab"
+          tabindex="0">
+          <div class="design__tool--content">
+            <textarea class="text-place" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-font" role="tabpanel" aria-labelledby="nav-font-tab" tabindex="0">
+          <div class="text-editor">
+            <select class="form-control select-custom w-100">
+              <option selected="selected">orange</option>
+              <option>white</option>
+              <option>purple</option>
+            </select>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-style" role="tabpanel" aria-labelledby="nav-style-tab" tabindex="0">
+          <div class="text-editor">
+            <div class="text-editor__tool">
+              <div class="select-editor d-flex align-items-center justify-content-center">
+                <div class="select-editor__item me-3">
+                  <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.41304 5.07142C3.41304 5.6237 3.86075 6.07142 4.41304 6.07142H6.86955C8.26085 6.07142 8.9565 5.47618 8.9565 4.28571C8.9565 3.13725 8.1739 2.56302 6.60868 2.56302H4.41304C3.86075 2.56302 3.41304 3.01074 3.41304 3.56302V5.07142ZM0 1C0 0.447715 0.447715 0 1 0H7.30433C10.6087 0 12.2608 1.23949 12.2608 3.71848C12.2608 5.14705 11.5579 6.19046 10.1522 6.84873C11.0942 7.10083 11.8043 7.56301 12.2826 8.23528C12.7608 8.89354 13 9.69886 13 10.6512C13 12.0798 12.471 13.1652 11.413 13.9075C10.3551 14.6358 9.05795 15 7.52172 15H0.999999C0.447715 15 0 14.5523 0 14V1ZM3.41304 11.437C3.41304 11.9892 3.86075 12.437 4.41304 12.437H7.0652C8.74636 12.437 9.58694 11.7787 9.58694 10.4622C9.58694 9.0336 8.7681 8.31931 7.13042 8.31931H4.41304C3.86075 8.31931 3.41304 8.76703 3.41304 9.31931V11.437Z"
+                      fill="#2A2D46" />
+                  </svg>
+                </div>
+                <div class="select-editor__item me-3 active">
+                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.92534 0.799891C4.97209 0.566179 5.17729 0.397949 5.41563 0.397949H6.29583C6.61135 0.397949 6.848 0.686611 6.78612 0.996007L3.98612 14.996C3.93938 15.2297 3.73417 15.3979 3.49583 15.3979H2.61564C2.30012 15.3979 2.06347 15.1093 2.12535 14.7999L4.92534 0.799891Z"
+                      fill="#2A2D46" />
+                    <rect x="2.3811" y="0.397949" width="6.49999" height="2" rx="0.999998" fill="#2A2D46" />
+                    <rect x="-0.00012207" y="13.3979" width="6.59999" height="2" rx="0.999998" fill="#2A2D46" />
+                  </svg>
+                </div>
+                <div class="select-editor__item me-3">
+                  <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.224 8.06799V0.5C1.224 0.223858 1.44786 0 1.724 0H2.97399C3.25014 0 3.47399 0.223858 3.47399 0.5V7.32999C3.47399 7.76199 3.48599 8.11599 3.50999 8.39199C3.53399 8.66799 3.59999 8.99799 3.70799 9.38199C3.81599 9.75399 3.97199 10.048 4.17599 10.264C4.37999 10.48 4.67399 10.666 5.05799 10.822C5.45399 10.978 5.93399 11.056 6.49799 11.056C7.06199 11.056 7.53599 10.978 7.91999 10.822C8.31598 10.666 8.61598 10.48 8.81998 10.264C9.02398 10.048 9.17998 9.75399 9.28798 9.38199C9.39598 8.99799 9.46198 8.66799 9.48598 8.39199C9.50998 8.11599 9.52198 7.76199 9.52198 7.32999V0.5C9.52198 0.223858 9.74584 0 10.022 0H11.272C11.5481 0 11.772 0.223858 11.772 0.5V8.06799C11.772 9.67599 11.298 10.9 10.35 11.74C9.41398 12.58 8.12998 13 6.49799 13C4.86599 13 3.57599 12.58 2.628 11.74C1.692 10.9 1.224 9.67599 1.224 8.06799Z"
+                      fill="#2A2D46" />
+                    <path
+                      d="M0 15.5C0 15.2239 0.223857 15 0.499999 15H12.496C12.7721 15 12.996 15.2239 12.996 15.5C12.996 15.7761 12.7721 16 12.496 16H0.499999C0.223857 16 0 15.7761 0 15.5Z"
+                      fill="#2A2D46" />
+                  </svg>
+                </div>
+                <div class="select-editor__item me-3">
+                  <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="4.7998" width="8" height="1.6" rx="0.8" fill="#A3ACCB" />
+                    <rect y="9.6001" width="17.6" height="1.6" rx="0.8" fill="#A3ACCB" />
+                    <rect width="16" height="1.6" rx="0.8" fill="#A3ACCB" />
+                    <rect y="14.3999" width="12.8" height="1.6" rx="0.8" fill="#A3ACCB" />
+                  </svg>
+                </div>
+                <div class="select-editor__item me-3">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.6001" y="4.7998" width="12.8" height="1.6" rx="0.8" fill="#2A2D46" />
+                    <rect x="0.000244141" y="9.6001" width="16" height="1.6" rx="0.8" fill="#2A2D46" />
+                    <rect width="16" height="1.6" rx="0.8" fill="#2A2D46" />
+                    <rect x="4.00024" y="14.3999" width="8" height="1.6" rx="0.8" fill="#2A2D46" />
+                  </svg>
+                </div>
+                <div class="select-editor__item me-3">
+                  <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 4.7998)" fill="#A3ACCB" />
+                    <rect width="17.6" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 9.6001)" fill="#A3ACCB" />
+                    <rect width="16" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 0)" fill="#A3ACCB" />
+                    <rect width="12.8" height="1.6" rx="0.8" transform="matrix(-1 0 0 1 18 14.3999)" fill="#A3ACCB" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-color" role="tabpanel" aria-labelledby="nav-color-tab" tabindex="0">
+          <div class="content-sub color">
+            <div class="text-content select-color">
+              <div class="design__tool--content">
+                <h3 class="text-content__title">Default</h3>
+                <div class="text-editor__tool">
+                  <div class="select-editor">
+                    <div class="select-editor__item">
+                      <img src="../assets/img/color-add.png" alt="" />
+                    </div>
+                    <div class="color-choices">
+                      <input type="radio" value="None" id="radioOne" name="account" checked />
+                      <label for="radioOne" class="radio cl-1" checked></label>
+                    </div>
+                    <div class="color-choices">
+                      <input type="radio" value="None" id="radioTwo" name="account" />
+                      <label for="radioTwo" class="radio cl-2"></label>
+                    </div>
+                    <div class="color-choices">
+                      <input type="radio" value="None" id="radioThree" name="account" />
+                      <label for="radioThree" class="radio cl-3"></label>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="text-content__title">Suggested</h3>
+                <div class="color-suggest">
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radioOne" name="account" checked />
+                    <label for="radioOne" class="radio cl-1" checked></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radioTwo" name="account" />
+                    <label for="radioTwo" class="radio cl-2"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radioThree" name="account" />
+                    <label for="radioThree" class="radio cl-3"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio4" name="account" />
+                    <label for="radio4" class="radio cl-4"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio5" name="account" />
+                    <label for="radio5" class="radio cl-5"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio6" name="account" />
+                    <label for="radio6" class="radio cl-6"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-7"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-8"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-9"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-10"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-11"></label>
+                  </div>
+                  <div class="color-choices">
+                    <input type="radio" value="None" id="radio7" name="account" />
+                    <label for="radio7" class="radio cl-12"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-spacing" role="tabpanel" aria-labelledby="nav-spacing-tab" tabindex="0">
+          <div class="text-editor__tool">
+            <div class="slider-ranger d-flex align-items-center mb-3">
+              <div class="custum-range-slider custum-range-slider-second  w-100 me-3">
+                <input class="custum-range-slider__range w-100" value="0" min="0" max="100" type="range" />
+              </div>
+              <span class="slider-ranger__value">15px</span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-opacity" role="tabpanel" aria-labelledby="nav-opacity-tab" tabindex="0">
+          <div class="text-editor__tool">
+            <div class="slider-ranger d-flex align-items-center mb-3">
+              <div class="custum-range-slider custum-range-slider-second  w-100 me-3">
+                <input class="custum-range-slider__range w-100" value="0" min="0" max="100" type="range" />
+              </div>
+              <span class="slider-ranger__value">150</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

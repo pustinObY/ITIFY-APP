@@ -174,7 +174,19 @@
     $(".sticker-save").removeClass("d-none");
     $(".sticker-detail-save").addClass("d-none");
   });
-
+  $("#clickOpenAddText").click(()=> {
+    $(".text-content-editor").addClass("d-block");
+    $(".text-content-editor").removeClass("d-none");
+    $(".text-library").addClass("d-none");
+    
+  });
+  $("#clickBackTextForm").click(()=> {
+    $(".text-content-editor").removeClass("d-block");
+    $(".text-content-editor").addClass("d-none");
+    $(".text-library").removeClass("d-none");
+    
+  });
+  clickBackTextForm
   $("#close-tool-edit").click(function () {
     $(".tab-pane.fade").removeClass("active");
   });
