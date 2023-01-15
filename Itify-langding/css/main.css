@@ -19,3 +19,17 @@
 .text-center{
   text-align: center !important;
 }
+.e-con.menu-vertical-scroll{
+  max-height: 100%;
+  overflow: unset;
+}
+@media (max-width: 767.77px){
+  .elementor-element-0d2eb70, .elementor-element-b800ea1, .elementor-element-9cc0daa, .elementor-element-ea16668, .elementor-element-d42a2a6{
+    width: 50%;
+  }
+ }
+@media (min-width: 768px){
+  .pr-md-16{
+    padding-right: 16%  !important;
+  }
+}
