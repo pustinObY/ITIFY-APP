@@ -23,6 +23,9 @@
   max-height: 100%;
   overflow: unset;
 }
+.header-padding-2 {
+  margin-top: 16px;
+}
 @media (max-width: 767.77px){
   .elementor-element-0d2eb70, .elementor-element-b800ea1, .elementor-element-9cc0daa, .elementor-element-ea16668, .elementor-element-d42a2a6{
     width: 50%;
