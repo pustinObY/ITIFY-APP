@@ -302,7 +302,8 @@
                     fill="#75778E" />
                 </svg>
               </button>
-              <button class="nav-link d-none d-md-block">
+              <button class="nav-link d-none d-md-block" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalShareDesign">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.34" fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.3432 5.74196C16.5796 5.40183 17.0469 5.31773 17.3871 5.55412C19.5596 7.06399 21.0602 9.46595 21.3646 12.2381C21.4098 12.6499 21.1127 13.0203 20.7009 13.0655C20.2892 13.1107 19.9187 12.8136 19.8735 12.4018C19.6179 10.074 18.3585 8.05598 16.531 6.78586C16.1909 6.54946 16.1068 6.08209 16.3432 5.74196Z"
@@ -1302,7 +1303,8 @@
           <div class="design__view--modal canvas-editor d-md-flex">
             <!-- <img src="../assets/img/modal-shirt.png" alt="" /> -->
             <div id="dragShirt" class="text-center">
-              <svg class="img-product" width="512" height="460" viewBox="0 0 512 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="img-product" width="512" height="460" viewBox="0 0 512 460" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1750_12109)">
                   <path
                     d="M407.93 156.93C407.93 156.93 403.864 231.548 404.413 265.176C405.402 325.288 407.93 458.481 407.93 458.481H103.961C103.961 458.481 106.488 325.179 107.477 265.176C108.027 231.438 103.961 156.93 103.961 156.93C103.961 156.93 116.379 121.983 113.961 90.553C111.543 59.1231 93.5205 30.99 93.5205 30.99L185.283 2.74707C185.283 2.74707 187.041 83.8495 255.945 83.8495C322.431 83.8495 327.487 9.78034 327.816 3.07675L418.26 30.8801C418.26 30.8801 400.347 59.0132 397.929 90.4432C395.512 121.983 407.93 156.93 407.93 156.93Z"
@@ -1652,6 +1654,74 @@
 </div>
 <!-- ================== -->
 <!-- End Modal print Desktop -->
+<!-- ================== -->
+<!-- Start Modal Share Design -->
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade modal-share" id="modalShareDesign" data-bs-backdrop="static" data-bs-keyboard="false"
+  tabindex="-1" aria-labelledby="modalShareDesignLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="d-flex justify-content-end">
+        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn"><svg width="24" height="24"
+            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="3" width="25" height="1.5" rx="0.75" transform="rotate(45 4 3)" fill="#656782"></rect>
+            <rect x="2.93945" y="20.6777" width="25" height="1.5" rx="0.75" transform="rotate(-45 2.93945 20.6777)"
+              fill="#656782">
+            </rect>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-share__image">
+          <img src="../assets/img/share-detail.png" class="w-100" alt="">
+
+        </div>
+      </div>
+      <div class="modal-body modal-share__content">
+        <div class="text-center">
+          <h3 class="modal-title">Share this with your social Community
+          </h3>
+          <div class="modal-share__content--social">
+            <a href="#" class="item-social facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.397 20.997V12.801H16.162L16.573 9.592H13.397V7.548C13.397 6.622 13.655 5.988 14.984 5.988H16.668V3.127C15.849 3.039 15.025 2.997 14.201 3C11.757 3 10.079 4.492 10.079 7.231V9.586H7.332V12.795H10.085V20.997H13.397Z"
+                  fill="#484848" />
+              </svg>
+            </a>
+            <a href="#" class="item-social instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.947 8.30499C20.936 7.54799 20.796 6.79699 20.528 6.08899C20.059 4.87999 19.104 3.92399 17.895 3.45599C17.196 3.19299 16.457 3.05199 15.709 3.03599C14.747 2.99299 14.442 2.98099 12 2.98099C9.55799 2.98099 9.24499 2.98099 8.28999 3.03599C7.54299 3.05199 6.80399 3.19299 6.10499 3.45599C4.89599 3.92399 3.93999 4.87999 3.47199 6.08899C3.20899 6.78799 3.06699 7.52699 3.05299 8.27399C3.00999 9.23699 2.99699 9.54199 2.99699 11.984C2.99699 14.426 2.99699 14.738 3.05299 15.694C3.06799 16.442 3.20899 17.18 3.47199 17.881C3.94099 19.089 4.89599 20.045 6.10599 20.513C6.80199 20.785 7.54099 20.939 8.29099 20.963C9.25399 21.006 9.55899 21.019 12.001 21.019C14.443 21.019 14.756 21.019 15.711 20.963C16.458 20.948 17.197 20.807 17.897 20.544C19.106 20.075 20.061 19.119 20.53 17.911C20.793 17.211 20.934 16.473 20.949 15.724C20.992 14.762 21.005 14.457 21.005 12.014C21.003 9.57199 21.003 9.26199 20.947 8.30499ZM11.994 16.602C9.43999 16.602 7.37099 14.533 7.37099 11.979C7.37099 9.42499 9.43999 7.35599 11.994 7.35599C14.546 7.35599 16.617 9.42499 16.617 11.979C16.617 14.533 14.546 16.602 11.994 16.602ZM16.801 8.26299C16.204 8.26299 15.723 7.78099 15.723 7.18499C15.723 6.58899 16.204 6.10699 16.801 6.10699C17.396 6.10699 17.878 6.58899 17.878 7.18499C17.878 7.78099 17.396 8.26299 16.801 8.26299Z"
+                  fill="#484848" />
+                <path
+                  d="M11.994 14.982C13.6525 14.982 14.997 13.6375 14.997 11.979C14.997 10.3205 13.6525 8.97601 11.994 8.97601C10.3355 8.97601 8.991 10.3205 8.991 11.979C8.991 13.6375 10.3355 14.982 11.994 14.982Z"
+                  fill="#484848" />
+              </svg>
+            </a>
+            <a href="#" class="item-social twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.633 7.99698C19.646 8.17198 19.646 8.34598 19.646 8.51998C19.646 13.845 15.593 19.981 8.186 19.981C5.904 19.981 3.784 19.32 2 18.172C2.324 18.209 2.636 18.222 2.973 18.222C4.856 18.222 6.589 17.586 7.974 16.501C6.203 16.464 4.719 15.304 4.207 13.708C4.456 13.745 4.706 13.77 4.968 13.77C5.329 13.77 5.692 13.72 6.029 13.633C4.182 13.259 2.799 11.638 2.799 9.67998V9.62998C3.336 9.92898 3.959 10.116 4.619 10.141C3.534 9.41898 2.823 8.18398 2.823 6.78698C2.823 6.03898 3.022 5.35298 3.371 4.75498C5.354 7.19798 8.335 8.79498 11.677 8.96998C11.615 8.66998 11.577 8.35898 11.577 8.04698C11.577 5.82698 13.373 4.01898 15.605 4.01898C16.765 4.01898 17.812 4.50498 18.548 5.29098C19.458 5.11598 20.33 4.77898 21.104 4.31798C20.805 5.25298 20.168 6.03898 19.333 6.53798C20.144 6.44998 20.93 6.22598 21.652 5.91398C21.104 6.71198 20.419 7.42298 19.633 7.99698Z"
+                  fill="#484848" />
+              </svg>
+            </a>
+          </div>
+          <div class="modal-share__content--link">
+            <label class="link-description">Or copy link:</label>
+            <div class="link-content">
+              <input type="text" value="https://einkc.com/deisng-normal/">
+              <a href="#" class="link-content__copy">Copy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================== -->
+<!-- End Modal Share Design -->
 <!-- end design-editor-2.html-->
     <div class="design-editor-style">
 <!-- start footer.html-->
