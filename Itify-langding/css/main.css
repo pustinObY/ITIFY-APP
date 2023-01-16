@@ -26,6 +26,23 @@
 .header-padding-2 {
   margin-top: 16px;
 }
+.haru-banner--style-4 .haru-banner__image img{
+  height: 235px;
+  object-fit: cover;
+}
+.haru-accordion--style-3 .haru-tab-title[aria-expanded = true]{
+  background-color: #FF434D;
+  box-shadow: 0 7px 30px 00000021;
+}
+.haru-accordion--style-3 .haru-tab-title[aria-expanded = true] .haru-accordion-title, .haru-accordion--style-3 .haru-tab-title[aria-expanded = true] .haru-accordion-icon i{
+  color: #ffffff;
+}
+.haru-accordion--style-3 .haru-tab-title[aria-expanded = true] .haru-accordion-icon-closed{
+  display: none;
+}
+.haru-accordion--style-3 .haru-tab-title[aria-expanded = true] .haru-accordion-icon-opened{
+  display: inline-block;
+}
 @media (max-width: 767.77px){
   .elementor-element-0d2eb70, .elementor-element-b800ea1, .elementor-element-9cc0daa, .elementor-element-ea16668, .elementor-element-d42a2a6{
     width: 50%;
