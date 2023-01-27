@@ -410,3 +410,17 @@ input[type="range"]::-ms-fill-upper {
 textarea{
   border-radius: 3px;
 }
+
+/*=================*/
+/*--- End | switch radio ---*/
+/*=================*/
+.sharp{
+  .form-check {
+    .form-check-input{
+      float: right;
+    }
+  }
+  .form-switch{
+    padding-left: 0;
+  }
+}
